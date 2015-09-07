@@ -1,0 +1,269 @@
+/**
+ * Set link colors.
+ */
+a {
+	transition: all 200ms ease-in-out 0s;
+	color: $link-color;
+	text-decoration: none;
+	&:visited {
+		color: $link-visited-color;
+	}
+	&:hover,
+	&:visited:hover {
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+}
+
+/**
+ * Headings.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: $base-line-height/2 0;
+	color: $heading-font-color;
+	font-family: $heading-font-family;
+	font-style: $heading-font-style;
+	font-weight: $heading-font-weight;
+}
+
+h1,
+.h1 {
+	font-size: 36px;
+	line-height: 1.1em;
+}
+
+h2,
+.h2 {
+	font-size: 30px;
+	line-height: 1.1em;
+}
+
+h3,
+.h3 {
+	font-size: 24px;
+	line-height: 1.3em;
+}
+
+h4,
+.h4 {
+	font-size: 20px;
+	line-height: 1.3em;
+}
+
+h5,
+.h5 {
+	font-size: 16px;
+}
+
+h6,
+.h6 {
+	font-size: 14px;
+}
+
+/**
+ * Text elements.
+ */
+p {
+	margin: 0 0 $base-line-height;
+}
+
+abbr[title],
+dfn[title] {
+	cursor: help;
+}
+
+del {
+	color: #aaa;
+	text-decoration: line-through;
+	vertical-align: baseline;
+}
+
+code, kbd, pre, samp {
+	font-size: 16px;
+}
+
+pre {
+	margin: $base-line-height 0;
+	padding: $base-line-height;
+	background-color: #fafafa;
+	color: #2080ad;
+}
+
+code {
+	color: #2080ad;
+}
+
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+blockquote {
+	margin: $base-line-height 40px;
+	padding-left: 20px;
+	border-left: 3px solid $color-1;
+	color: #777;
+	font-style: italic;
+
+	cite {
+		padding: 10px 0 0 20px;
+		color: #555;
+		display: block;
+		position: relative;
+		&:before {
+			content: '\2014';
+			left: 0;
+			position: absolute;
+		}
+	}
+}
+
+q:before,
+q:after,
+blockquote:before, 
+blockquote:after {
+  content: "";
+}
+
+address {
+	margin: 0 0 $base-line-height;
+	display: block;
+}
+
+ul, 
+ol {
+	margin: $base-font-size 0;
+	padding: 0 0 0 $base-line-height;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ol ol {
+	list-style: upper-alpha;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+
+li ul, 
+li ol {
+	margin: 0;
+}
+
+dl {
+	margin: $base-line-height;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin-bottom: $base-line-height;
+}
+
+hr {
+	margin: $base-line-height 0;
+	border-top: 1px solid $border-color;
+	border-bottom: 0;
+	border-right: 0;
+	border-left: 0;
+	clear: both;
+	height: 1px;
+	min-height: 0;
+	
+	&.dotted {
+		border-style: dotted;
+	}
+	&.dashed {
+		border-style: dashed;
+	}
+	&.blackborder {
+		border-color: #000;
+	}
+	&.whiteborder {
+		border-color: #fff;
+	}
+}
+
+/**
+ * Print styles.
+ */
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}

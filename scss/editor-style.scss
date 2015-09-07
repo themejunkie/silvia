@@ -1,0 +1,29 @@
+@import url( '../../style.min.css' );
+
+body#tinymce {
+	background: #fff;
+	color: #555;
+	margin: 40px;
+	-webkit-font-smoothing: auto !important;
+
+	.alignleft {
+		margin-right: 1.5em;
+	}
+
+	.alignright {
+		margin-left: 1.5em;
+	}
+
+	.wp-caption-dt {
+		max-width: 100%;
+	}
+
+	.wp-caption-dd {
+		font-size: 14px;
+		font-style: italic;
+		color: #999;
+		text-align: left;
+		padding: 0;
+	}
+
+}

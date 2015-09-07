@@ -1,0 +1,54 @@
+.customize-control-switch .switch {
+	position: relative;
+	display: inline-block;
+	color: #aaa;
+	height: 29px;
+	line-height: 38px;
+	border: 1px solid #dedede;
+	background: #f2f2f2;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+	width: 100px;
+	text-align: center;
+}
+
+.customize-control-switch .switch .toggle {
+	position: absolute;
+	top: -1px;
+	width: 47px;
+	height: 29px;
+	background: #fff;
+	z-index: 1;
+	transition: all 0.15s ease-in-out;
+	background-color: #2ea2cc;
+	border: 1px solid #0074a2;
+	color: #fff;
+	box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+	display: block;
+}
+
+.customize-control-switch .switch .on,
+.customize-control-switch .switch .off {
+	display: inline-block;
+	width: 47px;
+	position: relative;
+	top: -5px;
+	z-index: 1;
+}
+
+.customize-control-switch .switch.on .on,
+.customize-control-switch .switch.off .off {
+	color: #fff; 
+}
+
+.customize-control-switch .switch.on .toggle {
+	left: 0; 
+}
+
+.customize-control-switch .switch.off .toggle {
+	left: 54%; 
+}
+
+body.IE7 .switch {
+	width: 78px; 
+}

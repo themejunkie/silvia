@@ -1,0 +1,57 @@
+.wide-container {
+	@include container(1170px);
+	padding: 0;
+
+	@include susy-media(240px 1170px) {
+		padding: 0 30px;
+	}
+
+}
+
+.container {
+	@include container(940px);
+
+	@include susy-media(240px 1170px) {
+		padding: 0 30px;
+	}
+
+}
+
+@include with-layout( 12 (60px 35px) ) {
+	
+	@include susy-media(768px) {
+		.content-area {
+			@include span(8 of 12);
+		}
+
+		.widget-area {
+			@include span(4 of 12 last)
+		}
+	}
+
+}
+
+.layout-2c-r {
+
+	.content-area {
+		float: right;
+		margin-right: 0;
+	}
+	
+	@include with-layout( 12 (60px 35px) ) {
+		.widget-area {
+			float: left;
+			margin-right: gutter();
+		}
+	}
+
+}
+
+.layout-1c {
+
+	.content-area {
+		margin-right: 0;
+		width: 100%;
+	}
+
+}

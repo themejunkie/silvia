@@ -1,0 +1,56 @@
+// Import helpers files
+// -------------------------------------------------
+
+// Import susy
+@import "node_modules/susy/sass/susy";
+
+// Variables
+@import "helpers/font-stacks";
+@import "helpers/color-palettes";
+
+// Mixins
+@import "helpers/mixins";
+
+// Typography Variables
+// -------------------------------------------------
+
+// Basic Typography
+$base-font-size:       18px;
+$base-line-height:     27px;
+$font-size:            $base-font-size !default;
+$browser-font-size:    16px !default;
+
+// Body type
+$body-font-family:     'Crimson Text', serif !default;
+$body-font-weight:     400 !default;
+$body-font-style:      normal !default;
+
+// Heading type
+$heading-font-family:  'Oswald', sans-serif !default;
+$heading-font-weight:  400 !default;
+$heading-font-style:   normal !default;
+
+// Color Variables
+// -------------------------------------------------
+
+// Project base color
+// ==================================
+$color-1:             #2196F3 !default;
+$color-2:             #fff !default;
+$color-3:             #454545 !default;
+// ===================================
+
+// Base colors
+$body-bg-color:        $color-2 !default;
+$border-color:         #e9e9e9 !default;
+$selection-bg-color:   $color-1 !default;
+$selection-font-color: $color-2 !default;
+
+// Typography colors
+$body-font-color:      $color-3 !default;
+$heading-font-color:   $color-3 !default;
+
+// Link colors
+$link-color:           $color-1 !default;
+$link-hover-color:     lighten($link-color, 10%) !default;
+$link-visited-color:   darken($link-color, 5%) !default;
