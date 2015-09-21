@@ -3,6 +3,7 @@
 * Added documentation link on Customizer page
 * Updated html5shiv.min.js
 * Updated language
+* Updated missing textdomain
 
 1.0.2 - Aug 2, 2015
 * Jetpack social, tiled galleries, infinite scroll and contact form module support

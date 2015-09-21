@@ -94,8 +94,7 @@ module.exports = function(grunt) {
 		sass: {
 			dev: {
 				options: {
-					outputStyle: 'nested',
-					require: 'susy'
+					outputStyle: 'nested'
 				},
 				files: {
 					'style.css': 'scss/style.scss',
@@ -104,8 +103,7 @@ module.exports = function(grunt) {
 			},
 			prod: {
 				options: {
-					outputStyle: 'compressed',
-					require: 'susy'
+					outputStyle: 'compressed'
 				},
 				files: {
 					'style.min.css': 'scss/style.scss'
