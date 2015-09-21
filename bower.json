@@ -1,8 +1,8 @@
 {
   "name": "silvia",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "dependencies": {
-    "html5shiv": "~3.7.2",
+    "html5shiv": "~3.7.3",
     "fitvids": "~1.1.0",
     "fontawesome": "~4.3.0",
     "slicknav": "~1.0.3",

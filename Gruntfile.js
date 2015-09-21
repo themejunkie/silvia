@@ -72,16 +72,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Javascript linting with jshint.
-		jshint: {
-			options: {
-				jshintrc: '.jshintrc',
-				"force": true
-			},
-			beforeconcat: ['assets/js/plugins.min.js', 'assets/js/main.js'],
-			afterconcat: ['assets/js/<%= pkg.name %>.min.js']
-		},
-
 		// Minify CSS
 		cssmin: {
 			options: {
@@ -278,7 +268,7 @@ module.exports = function(grunt) {
 		clean: {
 			build: [
 				'build/<%= pkg.name %>',
-				'build/<%= pkg.name %>.zip',
+				'build/<%= pkg.name %>-<%= pkg.version %>.zip',
 			]
 		},
 
@@ -297,10 +287,10 @@ module.exports = function(grunt) {
 					type: 'wp-theme',                    // Type of project (wp-plugin or wp-theme).
 					updateTimestamp: true,               // Whether the POT-Creation-Date should be updated without other changes.
 					processPot: function( pot, options ) {
-						pot.headers['report-msgid-bugs-to'] = 'http://themephe.com/';
+						pot.headers['report-msgid-bugs-to'] = 'https://themephe.com/items/silvia';
 						pot.headers['plural-forms'] = 'nplurals=2; plural=n != 1;';
-						pot.headers['last-translator'] = 'Satrya (satrya@themephe.com)\n';
-						pot.headers['language-team'] = 'Satrya (satrya@themephe.com)\n';
+						pot.headers['last-translator'] = 'Support (support@themephe.com)\n';
+						pot.headers['language-team'] = 'Support (support@themephe.com)\n';
 						pot.headers['x-poedit-basepath'] = '..\n';
 						pot.headers['x-poedit-language'] = 'English\n';
 						pot.headers['x-poedit-country'] = 'UNITED STATES\n';
@@ -328,7 +318,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', [
 		'newer:clean',
 		'newer:uglify',
-		'newer:jshint',
 		'newer:imagemin',
 		'newer:sass',
 		'newer:cssjanus',

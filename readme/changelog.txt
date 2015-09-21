@@ -1,10 +1,16 @@
-1.0.2 - 02/8/2015
+1.0.3 - Sept 21, 2015
+* Fixed error on Customizer page
+* Added documentation link on Customizer page
+* Updated html5shiv.min.js
+* Updated language
+
+1.0.2 - Aug 2, 2015
 * Jetpack social, tiled galleries, infinite scroll and contact form module support
 * Fix conflicted popup gallery with Jetpack carousel module
 * Remove Jetpack sharing from excerpt
 * Polylang support
 
-1.0.1 - 17/7/2015
+1.0.1 - July 17, 2015
 * Fix bug when child theme active and WP_DEBUG turned on.
 * Fix error schema.org markup
 * Add a nice little dropdown menu arrow
@@ -12,5 +18,5 @@
 * Add option to hide search icon
 * Hide color customizer output when the default value is used
 
-1.0.0 - 22/6/2015
+1.0.0 - June 22, 2015
 * Initial release

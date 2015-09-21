@@ -182,7 +182,7 @@ function silvia_customizer_register() {
 			'description'  => __( 'Customize the footer text.', 'silvia' ),
 			'section'      => $section,
 			'type'         => 'textarea',
-			'default'      => '&copy; Copyright ' . date( 'Y' ) . ' <a href="' . esc_url( home_url() ) . '">' . esc_attr( get_bloginfo( 'name' ) ) . '</a> &middot; Designed by <a href="http://themephe.com/">ThemePhe</a>'
+			'default'      => '&copy; Copyright ' . date( 'Y' ) . ' <a href="' . esc_url( home_url() ) . '">' . esc_attr( get_bloginfo( 'name' ) ) . '</a> &middot; Designed by <a href="https://themephe.com/items/silvia/">ThemePhe</a>'
 		);
 
 	// Header Panels and Sections

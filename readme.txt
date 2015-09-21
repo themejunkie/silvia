@@ -7,3 +7,6 @@
 - Documentation : https://themephe.com/doc/silvia
 - Twitter       : https://twitter.com/themephe
 - Facebook      : https://www.facebook.com/pages/ThemePhe/101548583517055
+
+= Resources = 
+- We purchase some of our images in our demo
