@@ -49,6 +49,7 @@
 
 .entry-post {
 	font-size: 18px;
+	word-wrap: break-word;
 	@include susy-media(768px) {
 		font-size: 20px;
 	}
@@ -219,6 +220,10 @@
 		margin-bottom: 60px;
 	}
 
+}
+
+.entry-content {
+	word-wrap: break-word;
 }
 
 /**

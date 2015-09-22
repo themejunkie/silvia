@@ -3,7 +3,7 @@
  * Theme Name: Silvia
  * Theme URI: https://themephe.com/items/silvia/
  * Description: Silvia is a light, bright and beautiful photography WordPress theme. It’s ideal for website focused on photography, graphic design, fashion, art, architecture, interior design, and other creative fields! Key features are responsive, retina support and SEO friendly with Schema.org markup. The theme options are powered by easy-to-use Customizer, allows you to modify various options including colors, typography, layout, etc. It also smoothly integrated with Jetpack and Polylang plugin.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: ThemePhe
  * Author URI: https://themephe.com/
  * Tags: blue, one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-menu, editor-style, threaded-comments, translation-ready
@@ -1776,6 +1776,7 @@ a.pure-button-selected {
 
 .entry-post {
 	font-size: 18px;
+	word-wrap: break-word;
 }
 
 @media (min-width: 768px) {
@@ -1939,6 +1940,10 @@ a.pure-button-selected {
 
 .attachment .hentry {
 	margin-bottom: 60px;
+}
+
+.entry-content {
+	word-wrap: break-word;
 }
 
 /**

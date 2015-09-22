@@ -49,50 +49,6 @@ function silvia_customizer_styles() {
 endif;
 add_action( 'wp_head', 'silvia_customizer_styles', 11 );
 
-if ( ! function_exists( 'silvia_display_favicon' ) ) :
-/**
- * Display the favicon
- *
- * @since 1.0.0
- */
-function silvia_display_favicon() {
-	
-	// Theme prefix
-	$prefix = 'silvia-';
-
-	// Get the favicon
-	$favicon = silvia_mod( $prefix . 'favicon' );
-
-	if ( $favicon ) {
-		echo '<link href="' . esc_url( $favicon ) . '" rel="shortcut icon">' . "\n";
-	}
-
-}
-endif;
-add_action( 'wp_head', 'silvia_display_favicon', 5 );
-
-if ( ! function_exists( 'silvia_display_mobile_icon' ) ) :
-/**
- * Display the mobile icon
- *
- * @since 1.0.0
- */
-function silvia_display_mobile_icon() {
-	
-	// Theme prefix
-	$prefix = 'silvia-';
-
-	// Get the mobile icon
-	$icon = silvia_mod( $prefix . 'mobile-icon' );
-
-	if ( $icon ) {
-		echo '<link href="' . esc_url( $icon ) . '" rel="apple-touch-icon-precomposed">' . "\n";
-	}
-
-}
-endif;
-add_action( 'wp_head', 'silvia_display_mobile_icon', 6 );
-
 if ( ! function_exists( 'silvia_custom_feed_url' ) ) :
 /**
  * Custom RSS feed url.

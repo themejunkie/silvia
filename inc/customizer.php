@@ -42,32 +42,6 @@ function silvia_customizer_register() {
 		'priority' => 10
 	);
 
-		// Favicon
-		$section = $prefix . 'favicon-section';
-
-		$sections[] = array(
-			'id'          => $section,
-			'title'       => __( 'Favicon', 'silvia' ),
-			'priority'    => 35,
-			'panel'       => $general_panel
-		);
-		$options[$prefix . 'favicon'] = array(
-			'id'           => $prefix . 'favicon',
-			'label'        => __( 'Favicon', 'silvia' ),
-			'section'      => $section,
-			'type'         => 'image',
-			'default'      => '',
-			'description'  => __( 'File must be <strong>.png</strong> or <strong>.ico</strong> format. Optimal dimensions: <strong>32px x 32px</strong>.', 'silvia' ),
-		);
-		$options[$prefix . 'mobile-icon'] = array(
-			'id'           => $prefix . 'mobile-icon',
-			'label'        => __( 'Apple Touch Icon', 'silvia' ),
-			'section'      => $section,
-			'type'         => 'image',
-			'default'      => '',
-			'description'  => __( 'File must be <strong>.png</strong> format. Optimal dimensions: <strong>152px x 152px</strong>.', 'silvia' ),
-		);
-
 		// RSS
 		$section = $prefix . 'rss-section';
 
