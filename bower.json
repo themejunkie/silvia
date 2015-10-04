@@ -1,6 +1,23 @@
 {
   "name": "silvia",
   "version": "1.0.4",
+  "homepage": "https://www.theme-junkie.com/",
+  "authors": [
+    "Theme Junkie <support@theme-junkie.com>"
+  ],
+  "description": "Silvia is a light, bright and beautiful photography WordPress theme.",
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "license": "GPL v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "html5shiv": "~3.7.3",
     "fitvids": "~1.1.0",

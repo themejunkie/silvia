@@ -3,8 +3,8 @@
  * Custom and output functions for the theme customizer 
  *
  * @package    Silvia
- * @author     ThemePhe
- * @copyright  Copyright (c) 2015, ThemePhe
+ * @author     Theme Junkie
+ * @copyright  Copyright (c) 2015, Theme Junkie
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  * @since      1.0.0
  */
@@ -116,7 +116,7 @@ function silvia_documentation_link() {
 		'silvia-customizer-doc',
 		'prefixL10n',
 		array(
-			'prefixURL'   => esc_url( 'https://themephe.com/doc/silvia/' ),
+			'prefixURL'   => esc_url( 'http://docs.theme-junkie.com/silvia/' ),
 			'prefixLabel' => __( 'Documentation', 'silvia' ),
 		)
 	);

@@ -3,8 +3,8 @@
  * Register custom customizer panels, sections and settings.
  *
  * @package    Silvia
- * @author     ThemePhe
- * @copyright  Copyright (c) 2015, ThemePhe
+ * @author     Theme Junkie
+ * @copyright  Copyright (c) 2015, Theme Junkie
  * @license    http://www.gnu.org/licenses/gpl-2.0.html
  * @since      1.0.0
  */
@@ -100,7 +100,7 @@ function silvia_customizer_register() {
 		$sections[] = array(
 			'id'          => $section,
 			'title'       => __( 'Social', 'silvia' ),
-			'description' => __( 'Please add full profile link, for example https://twitter.com/themephe/', 'silvia' ),
+			'description' => __( 'Please add full profile link, for example https://twitter.com/theme_junkie/', 'silvia' ),
 			'priority'    => 120,
 			'panel'       => $general_panel,
 		);
@@ -156,7 +156,7 @@ function silvia_customizer_register() {
 			'description'  => __( 'Customize the footer text.', 'silvia' ),
 			'section'      => $section,
 			'type'         => 'textarea',
-			'default'      => '&copy; Copyright ' . date( 'Y' ) . ' <a href="' . esc_url( home_url() ) . '">' . esc_attr( get_bloginfo( 'name' ) ) . '</a> &middot; Designed by <a href="https://themephe.com/items/silvia/">ThemePhe</a>'
+			'default'      => '&copy; Copyright ' . date( 'Y' ) . ' <a href="' . esc_url( home_url() ) . '">' . esc_attr( get_bloginfo( 'name' ) ) . '</a> &middot; Designed by <a href="http://www.theme-junkie.com/">Theme Junkie</a>'
 		);
 
 	// Header Panels and Sections

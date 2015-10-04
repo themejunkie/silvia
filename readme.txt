@@ -3,10 +3,11 @@
 - Hybrid folder is based off Hybrid Core part http://themehybrid.com/hybrid-core, (C) 2010-2015 Justin Tadlock.
 - Customizer library by Devin Price, https://github.com/devinsays/customizer-library
 
-= Useful Links =
-- Documentation : https://themephe.com/doc/silvia
-- Twitter       : https://twitter.com/themephe
-- Facebook      : https://www.facebook.com/pages/ThemePhe/101548583517055
+= Useful Links = 
+- Documentation: http://docs.theme-junkie.com/bulan
+- Support      : http://www.theme-junkie.com/support
+- Twitter      : https://twitter.com/theme_junkie
+- Facebook     : https://www.facebook.com/themejunkies
 
 = Resources = 
 - We purchase some of our images in our demo
