@@ -1,6 +1,6 @@
 {
   "name": "silvia",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://www.theme-junkie.com/",
   "authors": [
     "Theme Junkie <support@theme-junkie.com>"
@@ -21,7 +21,7 @@
   "dependencies": {
     "html5shiv": "~3.7.3",
     "fitvids": "~1.1.0",
-    "fontawesome": "~4.3.0",
+    "fontawesome": "~4.4.0",
     "slicknav": "~1.0.3",
     "magnific-popup": "~1.0.0",
     "normalize.css": "~3.0.3"

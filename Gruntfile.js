@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-	// require it at the top and pass in the grunt instance 
+	// require it at the top and pass in the grunt instance
 	require('time-grunt')(grunt);
 
 	// Load all Grunt tasks
@@ -253,7 +253,7 @@ module.exports = function(grunt) {
 			build: {
 				options: {
 					mode: 'zip',
-					archive: './build/<%= pkg.name %>-<%= pkg.version %>.zip'
+					archive: './build/<%= pkg.name %>.zip'
 				},
 				expand: true,
 				cwd: 'build/<%= pkg.name %>/',
@@ -266,7 +266,7 @@ module.exports = function(grunt) {
 		clean: {
 			build: [
 				'build/<%= pkg.name %>',
-				'build/<%= pkg.name %>-<%= pkg.version %>.zip',
+				'build/<%= pkg.name %>.zip',
 			]
 		},
 

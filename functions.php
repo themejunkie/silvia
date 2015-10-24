@@ -101,28 +101,6 @@ function silvia_theme_setup() {
 endif; // silvia_theme_setup
 add_action( 'after_setup_theme', 'silvia_theme_setup' );
 
-if ( ! function_exists( 'silvia_reset_default_image_sizes' ) ) :
-/**
- * Re-set default image sizes
- *
- * @since  1.0.0
- */
-function silvia_reset_default_image_sizes() {
-
-	// 'large' size
-	update_option( 'large_size_w', 1024 );
-	update_option( 'large_size_h', 650 );
-	update_option( 'large_crop', 1 );
-
-	// 'medium' size
-	update_option( 'medium_size_w', 575 );
-	update_option( 'medium_size_h', 375 );
-	update_option( 'medium_crop', 1 );
-
-}
-endif;
-add_action( 'after_switch_theme', 'silvia_reset_default_image_sizes' );
-
 /**
  * Registers widget areas and custom widgets.
  *

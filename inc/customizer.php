@@ -77,23 +77,6 @@ function silvia_customizer_register() {
 			'type'        => 'textarea'
 		);
 
-		// Comment
-		$section = $prefix . 'comment-section';
-
-		$sections[] = array(
-			'id'          => $section,
-			'title'       => __( 'Comments', 'silvia' ),
-			'priority'    => 110,
-			'panel'       => $general_panel,
-		);
-		$options[$prefix . 'page-comment'] = array(
-			'id'           => $prefix . 'page-comment',
-			'label'        => __( 'Page Comment', 'silvia' ),
-			'section'      => $section,
-			'type'         => 'switch',
-			'default'      => 1
-		);
-
 		// Footer Social
 		$section = $prefix . 'footer-social-section';
 

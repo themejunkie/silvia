@@ -6,6 +6,7 @@ $prefix = 'silvia-';
 $title = silvia_mod( $prefix . 'page-title' );
 ?>
 
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php hybrid_attr( 'post' ); ?>>
 
 	<?php if ( $title ) : ?>
