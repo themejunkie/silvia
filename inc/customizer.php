@@ -29,10 +29,10 @@ function silvia_customizer_register() {
 	$options['sections'] = $sections;
 
 	// ======= Start Customizer Panels/Sections/Settings ======= //
-	
+
 	// Theme prefix
 	$prefix = 'silvia-';
-	
+
 	// General Panels and Sections
 	$general_panel = 'general';
 
@@ -139,7 +139,7 @@ function silvia_customizer_register() {
 			'description'  => __( 'Customize the footer text.', 'silvia' ),
 			'section'      => $section,
 			'type'         => 'textarea',
-			'default'      => '&copy; Copyright ' . date( 'Y' ) . ' <a href="' . esc_url( home_url() ) . '">' . esc_attr( get_bloginfo( 'name' ) ) . '</a> &middot; Designed by <a href="http://www.theme-junkie.com/">Theme Junkie</a>'
+			'default'      => '&copy; Copyright ' . date( 'Y' ) . ' <a href="' . esc_url( home_url() ) . '">' . esc_attr( get_bloginfo( 'name' ) ) . '</a> &middot; Designed by <a href="https://www.theme-junkie.com/themes/silvia">Theme Junkie</a>'
 		);
 
 	// Header Panels and Sections
@@ -227,7 +227,7 @@ function silvia_customizer_register() {
 			'default'     => '#333333',
 			'transport'   => 'postMessage'
 		);
-		
+
 		// Header colors
 		$section = $prefix . 'header-colors-section';
 
@@ -583,7 +583,7 @@ function silvia_customizer_register() {
 			'priority'    => 5,
 			'panel'       => $content_panel
 		);
-		
+
 		$options[$prefix . 'grid-layout'] = array(
 			'id'          => $prefix . 'grid-layout',
 			'label'       => __( 'Layout', 'silvia' ),

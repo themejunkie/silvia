@@ -4,7 +4,7 @@
  *
  * Contains all of the Theme's setup functions, custom functions,
  * custom hooks and Theme settings.
- * 
+ *
  * @package    Silvia
  * @author     Theme Junkie
  * @copyright  Copyright (c) 2015, Theme Junkie
@@ -63,6 +63,9 @@ function silvia_theme_setup() {
 	// Enable support for Post Thumbnails.
 	add_theme_support( 'post-thumbnails' );
 
+	// Set custom image sizes
+	add_image_size( 'silvia-featured', 380, 245, true );
+
 	// Register custom navigation menu.
 	register_nav_menus(
 		array(
@@ -85,13 +88,13 @@ function silvia_theme_setup() {
 	) ) );
 
 	// Enable theme-layouts extensions.
-	add_theme_support( 'theme-layouts', 
+	add_theme_support( 'theme-layouts',
 		array(
 			'1c'   => __( '1 Column Wide (Full Width)', 'silvia' ),
 			'2c-l' => __( '2 Columns: Content / Sidebar', 'silvia' ),
 			'2c-r' => __( '2 Columns: Sidebar / Content', 'silvia' )
 		),
-		array( 'customize' => false, 'default' => '1c' ) 
+		array( 'customize' => false, 'default' => '1c' )
 	);
 
 	// This theme uses its own gallery styles.
@@ -120,7 +123,7 @@ function silvia_sidebars_init() {
 			'after_title'   => '</h3>',
 		)
 	);
-	
+
 }
 add_action( 'widgets_init', 'silvia_sidebars_init' );
 
@@ -131,7 +134,7 @@ add_action( 'widgets_init', 'silvia_sidebars_init' );
  * @return string
  */
 function silvia_crimnson_text_font() {
-	
+
 	$font_url = '';
 	/*
 	 * Translators: If there are characters in your language that are not supported
@@ -151,7 +154,7 @@ function silvia_crimnson_text_font() {
  * @return string
  */
 function silvia_oswald_font() {
-	
+
 	$font_url = '';
 	/*
 	 * Translators: If there are characters in your language that are not supported

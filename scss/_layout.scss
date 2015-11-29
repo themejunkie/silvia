@@ -1,11 +1,6 @@
 .wide-container {
-	@include container(1170px);
-	padding: 0;
-
-	@include susy-media(240px 1170px) {
-		padding: 0 30px;
-	}
-
+	@include container();
+	padding: 0 20px;
 }
 
 .container {
@@ -18,7 +13,7 @@
 }
 
 @include with-layout( 12 (60px 35px) ) {
-	
+
 	@include susy-media(768px) {
 		.content-area {
 			@include span(8 of 12);
@@ -37,7 +32,7 @@
 		float: right;
 		margin-right: 0;
 	}
-	
+
 	@include with-layout( 12 (60px 35px) ) {
 		.widget-area {
 			float: left;

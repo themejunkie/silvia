@@ -10,7 +10,7 @@ $layout = silvia_mod( $prefix . 'grid-layout' );
 
 // Display the correct size
 if ( $layout == '3-col' || $layout == '4-col' ) {
-	$size = 'medium';
+	$size = 'silvia-featured';
 } else {
 	$size = 'large';
 }
@@ -24,7 +24,7 @@ if ( $layout == '3-col' || $layout == '4-col' ) {
 	<?php endif; ?>
 
 	<div class="thumbnail-detail">
-		
+
 		<?php the_title( sprintf( '<h2 class="entry-title" ' . hybrid_get_attr( 'entry-title' ) . '><a href="%s" rel="bookmark" itemprop="url">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
@@ -40,5 +40,7 @@ if ( $layout == '3-col' || $layout == '4-col' ) {
 		<?php endif; ?>
 
 	</div>
-	
+
+	<meta itemprop="datePublished" content="<?php echo get_the_date(); ?>">
+
 </article><!-- #post-## -->

@@ -1,10 +1,10 @@
 /**
  * Documentation notice for theme
  */
- 
+
 ( function( $ ) {
- 
-	// Add Upgrade Message
+
+	// Add Documentation Message
 	if ('undefined' !== typeof prefixL10n) {
 		doc = $('<a class="theme-doc-link"></a>')
 			.attr('href', prefixL10n.prefixURL)
@@ -23,15 +23,15 @@
 				'clear' : 'both'
 			})
 		;
- 
+
 		setTimeout(function () {
 			$('#accordion-section-themes h3').append(doc);
 		}, 200);
- 
+
 		// Remove accordion click event
 		$('.theme-doc-link').on('click', function(e) {
 			e.stopPropagation();
 		});
 	}
- 
+
 } )( jQuery );

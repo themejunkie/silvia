@@ -58,7 +58,7 @@ add_action( 'wp_enqueue_scripts', 'silvia_enqueue' );
 
 /**
  * Loads HTML5 Shiv file.
- * 
+ *
  * @since  1.0.0
  */
 function silvia_html5_shiv() {
@@ -82,13 +82,12 @@ function silvia_popup_gallery() {
 	if ( class_exists( 'Jetpack' ) && Jetpack::is_module_active( 'carousel' ) ) {
 		return;
 	}
-	
+
 	?>
 	<script>
-		var $ = jQuery.noConflict();
-		$(document).ready(function(){
-			$(".gallery-icon a[href$='.jpg'], .gallery-icon a[href$='.jpeg'], .gallery-icon a[href$='.png'], .gallery-icon a[href$='.gif']").magnificPopup({
-				type:'image',
+		jQuery( document ).ready( function( $ ){
+			$( ".gallery-icon a[href$='.jpg'], .gallery-icon a[href$='.jpeg'], .gallery-icon a[href$='.png'], .gallery-icon a[href$='.gif']" ).magnificPopup({
+				type: 'image',
 				gallery: {
 					enabled: true
 				},

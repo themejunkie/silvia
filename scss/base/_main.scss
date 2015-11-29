@@ -1,11 +1,11 @@
-*, 
-*:before, 
+*,
+*:before,
 *:after {
 	box-sizing: border-box;
 }
 
 * html {
-	font-size: 100% * ( $font-size / $browser-font-size ); 
+	font-size: 100% * ( $font-size / $browser-font-size );
 }
 
 html {
@@ -27,14 +27,14 @@ body {
 /**
  * Selection Color.
  */
-::selection { 
-	background: $selection-bg-color; 
-	color: $selection-font-color; 
-	text-shadow: none; 
+::selection {
+	background: $selection-bg-color;
+	color: $selection-font-color;
+	text-shadow: none;
 }
 
-::-moz-selection{ 
-	background: $selection-bg-color; 
-	color: $selection-font-color; 
-	text-shadow: none; 
+::-moz-selection{
+	background: $selection-bg-color;
+	color: $selection-font-color;
+	text-shadow: none;
 }

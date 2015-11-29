@@ -2,7 +2,7 @@
 /**
  * Custom template tags for this theme.
  * Eventually, some of the functionality here could be replaced by core features.
- * 
+ *
  * @package    Silvia
  * @author     Theme Junkie
  * @copyright  Copyright (c) 2015, Theme Junkie
@@ -13,10 +13,10 @@
 if ( ! function_exists( 'silvia_site_branding' ) ) :
 /**
  * Site branding for the site.
- * 
+ *
  * Display site title by default, but user can change it with their custom logo.
  * They can upload it on Customizer page.
- * 
+ *
  * @since  1.0.0
  */
 function silvia_site_branding() {
@@ -47,7 +47,7 @@ endif;
 if ( ! function_exists( 'silvia_callout' ) ) :
 /**
  * Home page callout
- * 
+ *
  * @since  1.0.0
  */
 function silvia_callout() {
@@ -77,7 +77,7 @@ endif;
 if ( ! function_exists( 'silvia_main_container' ) ) :
 /**
  * Main container class
- * 
+ *
  * @since  1.0.0
  */
 function silvia_main_container() {
@@ -127,7 +127,7 @@ function silvia_posted_on() {
 	<?php if ( $date ) : ?>
 		<time class="entry-date published entry-side" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>" <?php hybrid_attr( 'entry-published' ); ?>><?php printf( __( 'Published: %s', 'silvia' ), '<span>' . $style . '</span>' ); ?></time>
 	<?php endif; ?>
-	
+
 	<?php if ( $author ) : ?>
 		<span class="entry-author author vcard entry-side" <?php hybrid_attr( 'entry-author' ) ?>>
 			<?php printf( __( 'Author: %s', 'silvia' ), '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" itemprop="url"><span itemprop="name">' . esc_html( get_the_author() ) . '</span></a>' ); ?>
@@ -146,7 +146,7 @@ function silvia_posted_on() {
 		<?php endif; // End if categories ?>
 		<?php
 			$tag_list = get_the_tag_list( '', ', ' );
-			if ( $tag_list && $tag ) : 
+			if ( $tag_list && $tag ) :
 		?>
 			<span class="tag-links entry-side" <?php hybrid_attr( 'entry-terms', 'post_tag' ); ?>><?php printf( __( 'Tags: %s', 'silvia' ), $tag_list ); ?></span>
 		<?php endif; ?>
@@ -154,7 +154,7 @@ function silvia_posted_on() {
 
 	<?php if ( is_attachment() && wp_attachment_is_image() ) : ?>
 
-		<?php 
+		<?php
 		$metadata = wp_get_attachment_metadata(); // Retrieve attachment metadata.
 		$camera   = $metadata['image_meta']['camera'];
 		$aperture = $metadata['image_meta']['aperture'];
@@ -162,41 +162,41 @@ function silvia_posted_on() {
 		$iso      = $metadata['image_meta']['iso'];
 		$shutter  = $metadata['image_meta']['shutter_speed'];
 		?>
-		
+
 		<span class="full-size-link entry-side">
 			<?php printf( __( 'Size: %s', 'silvia' ), '<a href="' . esc_url( wp_get_attachment_url() ) . '">' . $metadata['width'] . ' &times; ' . $metadata['height'] . '</a>' ); ?>
 		</span>
-		
+
 		<?php if ( $camera ) : ?>
 			<span class="camera entry-side">
 				<?php printf( __( 'Camera: %s', 'silvia' ), '<span>' . $camera . '</span>' ); ?>
 			</span>
 		<?php endif; ?>
-		
+
 		<?php if ( $aperture ) : ?>
 			<span class="apparture entry-side">
 				<?php printf( __( 'Aperture: %s', 'silvia' ), '<span>' . $aperture . '</span>' ); ?>
 			</span>
 		<?php endif; ?>
-		
+
 		<?php if ( $focal ) : ?>
 			<span class="focal-length entry-side">
 				<?php printf( __( 'Focal Length: %s', 'silvia' ), '<span>' . $focal . '</span>' ); ?>
 			</span>
 		<?php endif; ?>
-		
+
 		<?php if ( $iso ) : ?>
 			<span class="iso entry-side">
 				<?php printf( __( 'ISO: %s', 'silvia' ), '<span>' . $iso . '</span>' ); ?>
 			</span>
 		<?php endif; ?>
-		
+
 		<?php if ( $shutter ) : ?>
 			<span class="shutter-speed entry-side">
 				<?php printf( __( 'Shutter Speed: %s', 'silvia' ), '<span>' . $shutter . '</span>' ); ?>
 			</span>
 		<?php endif; ?>
-	
+
 	<?php endif; ?>
 
 	<?php
@@ -278,7 +278,7 @@ function silvia_related_posts() {
 	if ( empty( $terms ) ) {
 		return;
 	}
-	
+
 	// Posts query arguments.
 	$query = array(
 		'post__not_in' => array( $post->ID ),
@@ -308,14 +308,14 @@ function silvia_related_posts() {
 				<?php while ( $related->have_posts() ) : $related->the_post(); ?>
 					<li>
 						<?php if ( has_post_thumbnail() && $img ) : ?>
-							<a class="thumbnail-link" href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium', array( 'class' => 'related-thumbnail', 'alt' => esc_attr( get_the_title() ) ) ); ?></a>
+							<a class="thumbnail-link" href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'silvia-featured', array( 'class' => 'related-thumbnail', 'alt' => esc_attr( get_the_title() ) ) ); ?></a>
 						<?php endif; ?>
 						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 					</li>
 				<?php endwhile; ?>
 			</ul>
 		</div>
-	
+
 	<?php endif;
 
 	// Restore original Post Data.
@@ -360,7 +360,7 @@ function silvia_comment( $comment, $args, $depth ) {
 
 			<div class="comment-body">
 				<div class="comment-wrapper">
-						
+
 					<div class="comment-head">
 						<?php
 							printf( '<span class="date"><a href="%1$s" ' . hybrid_get_attr( 'comment-permalink' ) . '><time datetime="%2$s" ' . hybrid_get_attr( 'comment-published' ) . '>%3$s</time></a> %4$s</span>',
@@ -372,7 +372,7 @@ function silvia_comment( $comment, $args, $depth ) {
 							);
 						?>
 					</div><!-- comment-head -->
-					
+
 					<div class="comment-content comment-entry" <?php hybrid_attr( 'comment-content' ); ?>>
 						<?php if ( '0' == $comment->comment_approved ) : ?>
 							<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'silvia' ); ?></p>
@@ -396,7 +396,7 @@ endif;
 if ( ! function_exists( 'silvia_comment_author_badge' ) ) :
 /**
  * Custom badge for post author comment
- * 
+ *
  * @since  1.0.0
  */
 function silvia_comment_author_badge() {
@@ -419,7 +419,7 @@ endif;
 if ( ! function_exists( 'silvia_social_links' ) ) :
 /**
  * Social profile links
- * 
+ *
  * @since  1.0.0
  */
 function silvia_social_links() {
@@ -469,7 +469,7 @@ function silvia_footer_text() {
 	// Theme prefix
 	$prefix = 'silvia-';
 
-	// Get the customizer data 
+	// Get the customizer data
 	$footer_text = silvia_mod( $prefix . 'footer-text' );
 
 	// If polylang plugin active, display the translation strings
@@ -482,14 +482,14 @@ function silvia_footer_text() {
 
 	// Display the data
 	echo '<p class="copyright">' . stripslashes( $text ) . '</p>';
-	
+
 }
 endif;
 
 if ( ! function_exists( 'silvia_posts_query_404' ) ) :
 /**
  * Custom query to display latest posts on 404 page.
- * 
+ *
  * @since  1.0.0
  */
 function silvia_posts_query_404() {

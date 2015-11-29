@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2.0 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Silvia 1.0.5\n"
+"Project-Id-Version: Silvia 1.0.6\n"
 "Report-Msgid-Bugs-To: http://www.theme-junkie.com/support\n"
-"POT-Creation-Date: 2015-10-24 16:11:01+00:00\n"
+"POT-Creation-Date: 2015-11-28 14:17:26+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -166,27 +166,27 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: functions.php:69
+#: functions.php:72
 msgid "Primary Location"
 msgstr ""
 
-#: functions.php:90
+#: functions.php:93
 msgid "1 Column Wide (Full Width)"
 msgstr ""
 
-#: functions.php:91
+#: functions.php:94
 msgid "2 Columns: Content / Sidebar"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:95
 msgid "2 Columns: Sidebar / Content"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:117
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:116
+#: functions.php:119
 msgid "Main sidebar that appears on the right."
 msgstr ""
 
@@ -630,7 +630,7 @@ msgid "Silvia"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://www.theme-junkie.com/themes/silvia/"
+msgid "https://www.theme-junkie.com/themes/silvia/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -638,10 +638,10 @@ msgid ""
 "Silvia is a light, bright and beautiful photography WordPress theme. It’s "
 "ideal for website focused on photography, graphic design, fashion, art, "
 "architecture, interior design, and other creative fields! Key features are "
-"responsive, retina support and SEO friendly with Schema.org markup. The "
-"theme options are powered by easy-to-use Customizer, allows you to modify "
-"various options including colors, typography, layout, etc. It also smoothly "
-"integrated with Jetpack and Polylang plugin."
+"responsive, retina support, fast load and SEO friendly with Schema.org "
+"markup. The theme options are powered by easy-to-use Customizer, allows you "
+"to modify various options including colors, typography, layout, etc. It "
+"also smoothly integrated with Jetpack and Polylang plugin."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -649,7 +649,7 @@ msgid "Theme Junkie"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.theme-junkie.com/"
+msgid "https://www.theme-junkie.com/"
 msgstr ""
 
 #: admin/extensions/fonts.php:194
@@ -674,7 +674,7 @@ msgid_plural "%1$s Comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:140
+#: functions.php:143
 #. Translators: If there are characters in your language that are not supported
 #. by Crimson Text, translate this to 'off'. Do not translate into your own
 #. language.
@@ -682,7 +682,7 @@ msgctxt "Crimson Text font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:163
 #. Translators: If there are characters in your language that are not supported
 #. by Oswald, translate this to 'off'. Do not translate into your own language.
 msgctxt "Oswald font: on or off"
@@ -697,7 +697,7 @@ msgstr ""
 
 #: searchform.php:3
 msgctxt "placeholder"
-msgid "Search …"
+msgid "Search &hellip;"
 msgstr ""
 
 #: searchform.php:3

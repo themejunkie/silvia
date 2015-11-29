@@ -1,3 +1,9 @@
+1.0.6 - Nov 20, 2015
+* Fixed image thumbnail size issue
+* Fixed schema markup error
+* Improve responsiveness
+* Passed the HTML validator
+
 1.0.5 - Oct 24, 2015
 * Remove `silvia_reset_default_image_sizes` function
 * Missing copyright for Customizer Library & Font Awesome

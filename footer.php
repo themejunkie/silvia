@@ -1,7 +1,7 @@
 		</div><!-- .wide-container -->
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo" <?php hybrid_attr( 'footer' ); ?>>
+	<footer id="colophon" class="site-footer" <?php hybrid_attr( 'footer' ); ?>>
 		<div class="wide-container">
 
 			<div class="site-info">
@@ -12,7 +12,7 @@
 
 		</div>
 	</footer><!-- #colophon -->
-	
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

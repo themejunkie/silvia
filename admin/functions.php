@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom and output functions for the theme customizer 
+ * Custom and output functions for the theme customizer
  *
  * @package    Silvia
  * @author     Theme Junkie
@@ -40,7 +40,7 @@ function silvia_move_default_customizer( $wp_customize ) {
 	// Live preview
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
-	
+
 }
 add_action( 'customize_register', 'silvia_move_default_customizer' );
 
@@ -110,7 +110,7 @@ function silvia_documentation_link() {
 		array(), '1.0.0',
 		true
 	);
- 
+
 	// Localize the script
 	wp_localize_script(
 		'silvia-customizer-doc',
@@ -120,6 +120,24 @@ function silvia_documentation_link() {
 			'prefixLabel' => __( 'Documentation', 'silvia' ),
 		)
 	);
- 
+
 }
 add_action( 'customize_controls_enqueue_scripts', 'silvia_documentation_link' );
+
+/**
+ * Display 'More premium themes' message.
+ *
+ * @since  1.0.0
+ */
+function silvia_premium_message() {
+
+	// Enqueue the script
+	wp_enqueue_script(
+		'silvia-customizer-premium',
+		get_template_directory_uri() . '/admin/js/premium.js',
+		array(), '1.0.0',
+		true
+	);
+
+}
+add_action( 'customize_controls_enqueue_scripts', 'silvia_premium_message' );

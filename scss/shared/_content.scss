@@ -107,9 +107,9 @@
 }
 
 .single {
-	
+
 	@include with-layout( 12 (60px 30px) ) {
-		
+
 		@include susy-media(768px) {
 			.entry-post {
 				@include span(9 of 12);
@@ -310,6 +310,19 @@
 
 	button {
 		text-transform: uppercase;
+	}
+
+}
+
+/**
+ * Popup
+ */
+button.mfp-arrow,
+button.mfp-close {
+	background-image: none;
+
+	&:active {
+		box-shadow: none;
 	}
 
 }

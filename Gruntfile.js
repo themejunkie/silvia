@@ -1,16 +1,16 @@
 module.exports = function(grunt) {
 
 	// require it at the top and pass in the grunt instance
-	require('time-grunt')(grunt);
+	require( 'time-grunt' )( grunt );
 
 	// Load all Grunt tasks
-	require('jit-grunt')(grunt, {
+	require( 'jit-grunt' )( grunt, {
 		makepot: 'grunt-wp-i18n'
 	});
 
 	grunt.initConfig({
 
-		pkg: grunt.file.readJSON('package.json'),
+		pkg: grunt.file.readJSON( 'package.json' ),
 
 		bowercopy: {
 			options: {
@@ -59,9 +59,7 @@ module.exports = function(grunt) {
 			dev: {
 				files: {
 					'assets/js/plugins.min.js': [
-						'assets/js/devs/jquery.fitvids.js',
-						'assets/js/devs/jquery.slicknav.min.js',
-						'assets/js/devs/jquery.magnific-popup.min.js',
+						'assets/js/devs/**/*.js'
 					]
 				}
 			},
@@ -82,9 +80,7 @@ module.exports = function(grunt) {
 			prod: {
 				files: {
 					'assets/css/plugins.min.css': [
-						'assets/css/devs/font-awesome.min.css',
-						'assets/css/devs/slicknav.css',
-						'assets/css/devs/magnific-popup.css',
+						'assets/css/devs/**/*.css'
 					]
 				}
 			}
@@ -94,7 +90,7 @@ module.exports = function(grunt) {
 		sass: {
 			dev: {
 				options: {
-					outputStyle: 'nested'
+					outputStyle: 'expanded'
 				},
 				files: {
 					'style.css': 'scss/style.scss',
@@ -141,19 +137,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// Sorting our CSS properties.
-		csscomb: {
-			options: {
-				config: 'csscomb.json'
-			},
-			main: {
-				files: {
-					'style.css': ['style.css'],
-					'rtl.css': ['rtl.css']
-				}
-			}
-		},
-
 		// Newer files checker
 		newer: {
 			options: {
@@ -188,36 +171,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// CSS Beautifier
-		cssbeautifier: {
-			files: [
-				'style.css',
-				'rtl.css',
-				'assets/css/editor-style.css',
-			],
-			options: {
-				indent: '	'
-			}
-		},
-
-		// Images minify
-		imagemin: {
-			screenshot: {
-				files: {
-					'screenshot.png': 'screenshot.png',
-					'screenshot.jpg': 'screenshot.jpg'
-				}
-			},
-			dynamic: {
-				files: [{
-					expand: true,
-					cwd: 'assets/img/',
-					src: ['**/*.{png,jpg,gif}'],
-					dest: 'assets/img/'
-				}]
-			}
-		},
-
 		// Copy the theme into the build directory
 		copy: {
 			build: {
@@ -231,17 +184,13 @@ module.exports = function(grunt) {
 					'!.git/**',
 					'!Gruntfile.js',
 					'!package.json',
-					'!csscomb.json',
 					'!bower.json',
-					'!sftpCache.json',
 					'!.gitignore',
 					'!.jshintrc',
 					'!.DS_Store',
 					'!.ftppass',
 					'!*.map',
 					'!**/*.map',
-					'!**/Gruntfile.js',
-					'!**/package.json',
 					'!**/*~'
 				],
 				dest: 'build/<%= pkg.name %>/'
@@ -314,14 +263,10 @@ module.exports = function(grunt) {
 
 	// Production task
 	grunt.registerTask('build', [
-		'newer:clean',
 		'newer:uglify',
-		'newer:imagemin',
-		'newer:sass',
-		'newer:cssjanus',
-		'newer:autoprefixer:main',
-		'newer:csscomb:main',
-		'newer:cssbeautifier',
+		'sass',
+		'cssjanus',
+		'autoprefixer:main',
 		'makepot',
 		'newer:copy'
 	]);

@@ -125,7 +125,7 @@ blockquote {
 
 q:before,
 q:after,
-blockquote:before, 
+blockquote:before,
 blockquote:after {
   content: "";
 }
@@ -135,7 +135,7 @@ address {
 	display: block;
 }
 
-ul, 
+ul,
 ol {
 	margin: $base-font-size 0;
 	padding: 0 0 0 $base-line-height;
@@ -161,7 +161,7 @@ ol ol ol ol {
 	list-style: lower-alpha;
 }
 
-li ul, 
+li ul,
 li ol {
 	margin: 0;
 }
@@ -187,7 +187,7 @@ hr {
 	clear: both;
 	height: 1px;
 	min-height: 0;
-	
+
 	&.dotted {
 		border-style: dotted;
 	}
