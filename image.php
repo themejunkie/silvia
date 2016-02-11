@@ -12,9 +12,9 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php hybrid_attr( 'post' ); ?>>
-					
+
 					<div class="entry-post">
-						
+
 						<div class="entry-content" <?php hybrid_attr( 'entry-content' ); ?>>
 
 							<div class="entry-attachment">
@@ -46,7 +46,7 @@
 						<?php silvia_posted_on(); ?>
 						<?php get_template_part( 'loop', 'nav' ); ?>
 					</div>
-					
+
 				</article><!-- #post-## -->
 
 

@@ -1,0 +1,42 @@
+Images, CSS, JS and Fonts License
+
+FONTS
+Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+
+IMAGES
+- Screenshot images licensed under CC0 1.0 - https://unsplash.com/
+
+CSS & JS
+- HTML5 Shiv
+HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+
+- FitVids
+Copyright 2013, Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
+* Credit to Thierry Koblentz - http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
+* Released under the WTFPL license - http://sam.zoy.org/wtfpl/
+
+- Magnific Popup
+Magnific Popup - v1.0.1 - 2015-12-30
+http://dimsemenov.com/plugins/magnific-popup/
+Copyright (c) 2015 Dmitry Semenov
+
+- scrollup
+scrollup v2.4.1
+Url: http://markgoodyear.com/labs/scrollup/
+Copyright (c) Mark Goodyear — @markgdyr — http://markgoodyear.com
+License: MIT
+
+- SlickNav
+SlickNav Responsive Mobile Menu v1.0.5
+(c) 2015 Josh Cope
+licensed under MIT
+
+- Select2
+Select2 4.0.1
+https://select2.github.io
+Released under the MIT license
+https://github.com/select2/select2/blob/master/LICENSE.md
+
+- All customizer script
+Released under the GPL license

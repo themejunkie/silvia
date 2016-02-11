@@ -1,25 +1,8 @@
-<?php
-// Theme prefix
-$prefix = 'silvia-';
-
-// Set up empty variable
-$size = '';
-
-// Get the data set in customizer
-$layout = silvia_mod( $prefix . 'grid-layout' );
-
-// Display the correct size
-if ( $layout == '3-col' || $layout == '4-col' ) {
-	$size = 'silvia-featured';
-} else {
-	$size = 'large';
-}
-?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php hybrid_attr( 'post' ); ?>>
 
 	<?php if ( has_post_thumbnail() ) : ?>
 		<a class="thumbnail-link" href="<?php the_permalink(); ?>">
-			<?php the_post_thumbnail( $size, array( 'class' => 'entry-thumbnail', 'alt' => esc_attr( get_the_title() ) ) ); ?>
+			<?php the_post_thumbnail( 'silvia-featured', array( 'class' => 'entry-thumbnail', 'alt' => esc_attr( get_the_title() ) ) ); ?>
 		</a>
 	<?php endif; ?>
 

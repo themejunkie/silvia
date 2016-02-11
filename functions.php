@@ -64,7 +64,7 @@ function silvia_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set custom image sizes
-	add_image_size( 'silvia-featured', 380, 245, true );
+	add_image_size( 'silvia-featured', 1024, 650, true );
 
 	// Register custom navigation menu.
 	register_nav_menus(

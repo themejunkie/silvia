@@ -4,11 +4,11 @@
 - Customizer library by Devin Price under GPL, https://github.com/devinsays/customizer-library
 - FontAwesome license under MIT License - http://fontawesome.io/
 
-= Useful Links = 
+= Useful Links =
 - Documentation: http://docs.theme-junkie.com/silvia
 - Support      : http://www.theme-junkie.com/support
 - Twitter      : https://twitter.com/theme_junkie
 - Facebook     : https://www.facebook.com/themejunkies
 
-= Resources = 
+= Resources =
 - We purchase some of our images in our demo

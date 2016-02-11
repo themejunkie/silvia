@@ -1,14 +1,12 @@
 .widget {
 	font-size: 16px;
 	margin-bottom: 60px;
-
 	ul {
 		@extend %reset-list;
 	}
-
 	li {
-		border-bottom: 1px solid #eee;
 		padding: 8px 0;
+		border-bottom: 1px solid #eee;
 		&:first-child {
 			padding-top: 0;
 		}
@@ -19,39 +17,34 @@
 			}
 		}
 	}
-
 	select {
-		border: 1px solid #eee;
 		width: 100%;
+		border: 1px solid #eee;
 	}
-
 }
 
 .widget-title {
-	background-color: #f5f5f5;
-	border-radius: 3px;
-	color: $color-3;
-	font-size: 14px;
 	font-family: $body-font-family;
+	font-size: 14px;
 	margin-bottom: 20px;
 	padding: 10px 0;
 	text-align: center;
 	text-transform: uppercase;
+	color: $color-3;
+	border-radius: 3px;
+	background-color: #f5f5f5;
 }
 
 .widget_archive,
 .widget_categories {
 	@extend %clearfix;
-
 	li {
 		text-align: right;
 		@extend %clearfix;
 	}
-
 	a {
 		float: left;
 	}
-
 }
 
 .widget_rss {
@@ -63,36 +56,31 @@
 }
 
 .widget_search {
-
 	.field {
 		width: 100%;
 	}
-
 }
 
 .widget_tag_cloud {
-
 	a {
-		background-color: $color-1;
-		border-radius: 3px;
-		color: $color-2;
-		padding: 2px 8px;
+		line-height: 1.5;
+		display: inline-block;
 		margin-right: 5px;
 		margin-bottom: 8px;
-		display: inline-block;
+		padding: 2px 8px;
 		letter-spacing: 1px;
-		line-height: 1.5;
 		text-transform: uppercase;
+		color: $color-2;
+		border-radius: 3px;
+		background-color: $color-1;
 		&:hover {
-			color: $color-2;
 			opacity: .75;
+			color: $color-2;
 		}
 	}
-
 }
 
 .widget_nav_menu {
-
 	.sub-menu {
 		padding-left: 20px;
 		li {
@@ -104,25 +92,20 @@
 			}
 		}
 	}
-
 }
 
 .widget_recent_entries {
-
 	li {
 		@extend %clearfix;
 	}
-
 	a {
-		float: left;
 		line-height: 1.5;
+		float: left;
 		width: 65%;
 	}
-
 	.post-date {
-		color: #777;
 		font-size: 14px;
 		float: right;
+		color: #777;
 	}
-
 }

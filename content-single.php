@@ -1,12 +1,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php hybrid_attr( 'post' ); ?>>
-	
+
 	<div class="entry-post">
-		
+
 		<div class="entry-content" <?php hybrid_attr( 'entry-content' ); ?>>
 
 			<?php if ( has_post_thumbnail() ) : ?>
 				<span class="thumbnail-link">
-					<?php the_post_thumbnail( 'large', array( 'class' => 'entry-thumbnail', 'alt' => esc_attr( get_the_title() ) ) ); ?>
+					<?php the_post_thumbnail( 'silvia-featured', array( 'class' => 'entry-thumbnail', 'alt' => esc_attr( get_the_title() ) ) ); ?>
 				</span>
 			<?php endif; ?>
 
@@ -17,7 +17,7 @@
 					'after'  => '</div>',
 				) );
 			?>
-		
+
 		</div>
 
 		<?php silvia_related_posts(); // Display the related posts. ?>
@@ -36,5 +36,5 @@
 		<?php silvia_posted_on(); ?>
 		<?php get_template_part( 'loop', 'nav' ); // Loads the loop-nav.php template  ?>
 	</div>
-	
+
 </article><!-- #post-## -->

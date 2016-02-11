@@ -1,14 +1,14 @@
-# Copyright (C) 2015 Theme Junkie
+# Copyright (C) 2016 Theme Junkie
 # This file is distributed under the GNU General Public License v2.0 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Silvia 1.0.6\n"
+"Project-Id-Version: Silvia 1.0.7\n"
 "Report-Msgid-Bugs-To: http://www.theme-junkie.com/support\n"
-"POT-Creation-Date: 2015-11-28 14:17:26+00:00\n"
+"POT-Creation-Date: 2016-02-11 05:33:08+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Support (support@theme-junkie.com)\n"
 "Language-Team: Support (support@theme-junkie.com)\n"
 "X-Generator: grunt-wp-i18n 0.5.3\n"
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: content.php:33 inc/template-tags.php:140
+#: content.php:16 inc/template-tags.php:140
 #. translators: used between list items, there is a space after the comma
 msgid ", "
 msgstr ""
@@ -512,10 +512,6 @@ msgstr ""
 msgid "Show page title"
 msgstr ""
 
-#: inc/extras.php:104
-msgid "Page %s"
-msgstr ""
-
 #: inc/hybrid/theme-layouts.php:463
 msgid "Layout is a theme-specific structure for the single view of the post."
 msgstr ""
@@ -635,13 +631,14 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Silvia is a light, bright and beautiful photography WordPress theme. It’s "
-"ideal for website focused on photography, graphic design, fashion, art, "
-"architecture, interior design, and other creative fields! Key features are "
-"responsive, retina support, fast load and SEO friendly with Schema.org "
-"markup. The theme options are powered by easy-to-use Customizer, allows you "
-"to modify various options including colors, typography, layout, etc. It "
-"also smoothly integrated with Jetpack and Polylang plugin."
+"Major update, please regenerate your image sizes. Silvia is a light, bright "
+"and beautiful photography WordPress theme. It’s ideal for website focused "
+"on photography, graphic design, fashion, art, architecture, interior "
+"design, and other creative fields! Key features are responsive, retina "
+"support, fast load and SEO friendly with Schema.org markup. The theme "
+"options are powered by easy-to-use Customizer, allows you to modify various "
+"options including colors, typography, layout, etc. It also smoothly "
+"integrated with Jetpack and Polylang plugin."
 msgstr ""
 
 #. Author of the plugin/theme

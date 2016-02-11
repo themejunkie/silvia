@@ -13,13 +13,14 @@ html {
 }
 
 body {
-	background: $body-bg-color;
-	color: $body-font-color;
 	font-family: $body-font-family;
-	font-style: $body-font-style;
 	font-size: $font-size;
 	font-weight: $body-font-weight;
+	font-style: $body-font-style;
 	line-height: ($base-line-height / $font-size) * 1em;
+	color: $body-font-color;
+	background: $body-bg-color;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -28,13 +29,13 @@ body {
  * Selection Color.
  */
 ::selection {
-	background: $selection-bg-color;
 	color: $selection-font-color;
+	background: $selection-bg-color;
 	text-shadow: none;
 }
 
-::-moz-selection{
-	background: $selection-bg-color;
+::-moz-selection {
 	color: $selection-font-color;
+	background: $selection-bg-color;
 	text-shadow: none;
 }

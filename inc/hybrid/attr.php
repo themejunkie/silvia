@@ -3,8 +3,8 @@
  * This is a stripped down version of Justin Tadlocks attributes and elements addition. I'll add the
  * classes and divs "manually" and add Schema.org support via filters below.
  *
- * The biggest benefit of using this is to provide richer 
- * microdata while being forward compatible with the ever-changing Web. Currently, the default microdata 
+ * The biggest benefit of using this is to provide richer
+ * microdata while being forward compatible with the ever-changing Web. Currently, the default microdata
  * vocabulary supported is Schema.org.
  *
  * @package    Silvia
@@ -64,9 +64,9 @@ function hybrid_attr( $slug, $context = '' ) {
 }
 
 /**
- * Gets an HTML element's attributes.  This function is actually meant to be filtered by theme authors, plugins, 
- * or advanced child theme users.  The purpose is to allow folks to modify, remove, or add any attributes they 
- * want without having to edit every template file in the theme.  So, one could support microformats instead 
+ * Gets an HTML element's attributes.  This function is actually meant to be filtered by theme authors, plugins,
+ * or advanced child theme users.  The purpose is to allow folks to modify, remove, or add any attributes they
+ * want without having to edit every template file in the theme.  So, one could support microformats instead
  * of microdata, if desired.
  *
  * @since  2.0.0
@@ -320,7 +320,7 @@ function hybrid_attr_post( $attr ) {
 		if ( 'post' === get_post_type() ) {
 
 			$attr['itemtype']  = 'http://schema.org/BlogPosting';
-			
+
 			// Add itemprop if within the main query
 			if ( is_main_query() && ! is_search() ) {
 				$attr['itemprop'] = 'blogPost';
@@ -584,12 +584,12 @@ function hybrid_attachment_is_video( $post_id = 0 ) {
  * @return array
  */
 function silvia_entry_markup( $classes ) {
-	
+
 	/* Add entry class for Schema.org markup. */
 	$classes[] = 'entry';
-    
+
     return $classes;
-	
+
 }
 add_filter( 'post_class', 'silvia_entry_markup' );
 

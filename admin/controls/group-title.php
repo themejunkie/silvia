@@ -31,10 +31,10 @@ class Customizer_Library_Group_Title extends WP_Customize_Control {
 	public function render_content() { ?>
 		<?php if ( $this->label ) { ?>
 			<h4 class="customize-control-group-title"><?php echo esc_html( $this->label ); ?></h4>
-		<?php } 
+		<?php }
 		if ( $this->description ) { ?>
 			<span class="description customize-control-description"><?php echo $this->description; ?></span>
 		<?php } ?>
 	<?php }
-	
+
 }

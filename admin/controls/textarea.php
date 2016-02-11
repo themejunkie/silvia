@@ -1,6 +1,6 @@
 <?php
 /**
- * The textarea customize control extends the WP_Customize_Control class.  This class allows 
+ * The textarea customize control extends the WP_Customize_Control class.  This class allows
  * developers to create textarea settings within the WordPress theme customizer.
  *
  * @package    Silvia
@@ -34,14 +34,14 @@ class Customizer_Library_Textarea extends WP_Customize_Control {
 		<label>
 			<?php if ( $this->label ) { ?>
 				<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-			<?php } 
+			<?php }
 			if ( $this->description ) { ?>
 				<span class="description customize-control-description"><?php echo $this->description; ?></span>
 			<?php } ?>
-			
+
 			<textarea class="widefat" cols="45" rows="5" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
-			
+
 		</label>
 	<?php }
-	
+
 }

@@ -56,7 +56,7 @@ if ( post_password_required() ) {
 	<?php endif; ?>
 
 	<?php comment_form(
-		array( 
+		array(
 			'comment_notes_after' => false,
 			'title_reply'         => __( 'Leave a Comment', 'silvia' )
 		)

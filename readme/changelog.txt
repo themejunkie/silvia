@@ -1,3 +1,15 @@
+1.0.7 - Feb 11, 2015
+* Fixed responsive image size issue
+  functions.php, content.php, content-single.php
+* Updated assets
+  assets/css, assets/js
+* Fixed inconsistently line-endings ( unix )
+  Almost all files
+* Temporary removed retina popup gallery, buggy
+  inc/scripts.php
+* Removed unused code
+  inc/extras.php
+
 1.0.6 - Nov 20, 2015
 * Fixed image thumbnail size issue
 * Fixed schema markup error

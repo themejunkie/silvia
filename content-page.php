@@ -24,7 +24,7 @@ $title = silvia_mod( $prefix . 'page-title' );
 			) );
 		?>
 	</div><!-- .entry-content -->
-	
+
 	<?php edit_post_link( __( 'Edit', 'silvia' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
 
 </article><!-- #post-## -->

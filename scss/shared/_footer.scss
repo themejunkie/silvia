@@ -1,9 +1,8 @@
 .site-footer {
-	background-color: #f5f5f5;
 	font-size: 16px;
 	padding: 20px 0;
+	background-color: #f5f5f5;
 	@extend %clearfix;
-	
 	.wide-container {
 		@include susy-media(240px) {
 			padding: 0 20px;
@@ -12,47 +11,41 @@
 }
 
 .site-info {
-	text-align: center;
 	margin-bottom: 20px;
-
+	text-align: center;
 	@include susy-media(768px) {
-		@include span(6 of 12);
 		margin-bottom: 0;
 		padding-top: 5px;
 		text-align: left;
+		@include span(6 of 12);
 	}
-
 	a {
-		border-bottom: 1px dotted #777;
 		color: $color-3;
+		border-bottom: 1px dotted #777;
 	}
-
 	p {
 		margin-bottom: 0;
 	}
-
 }
 
 .social-links {
 	text-align: center;
-
 	@include susy-media(768px) {
-		@include span(6 of 12 last);
 		text-align: right;
+		@include span(6 of 12 last);
 	}
-	
 	a {
-		background-color: #333;
-		color: #fff;
-		display: inline-block;
 		font-size: 16px;
-		margin: 0 5px;
+		line-height: 1;
+		display: inline-block;
 		width: 35px;
 		height: 35px;
-		border-radius: 50%;
-		line-height: 1;
-		text-align: center;
+		margin: 0 5px;
 		padding: 8px;
+		text-align: center;
+		color: #fff;
+		border-radius: 50%;
+		background-color: #333;
 		@media screen and (-webkit-min-device-pixel-ratio:0) {
 			padding: 9px;
 		}
@@ -60,9 +53,8 @@
 			padding: 9px;
 		}
 		&:hover {
-			background-color: $color-1;
 			color: #fff;
+			background-color: $color-1;
 		}
 	}
-
 }

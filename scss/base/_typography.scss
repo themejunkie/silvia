@@ -3,15 +3,15 @@
  */
 a {
 	transition: all 200ms ease-in-out 0s;
-	color: $link-color;
 	text-decoration: none;
+	color: $link-color;
 	&:visited {
 		color: $link-visited-color;
 	}
 	&:hover,
 	&:visited:hover {
-		color: $link-hover-color;
 		text-decoration: none;
+		color: $link-hover-color;
 	}
 }
 
@@ -24,11 +24,11 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: $heading-font-family;
+	font-weight: $heading-font-weight;
+	font-style: $heading-font-style;
 	margin: $base-line-height/2 0;
 	color: $heading-font-color;
-	font-family: $heading-font-family;
-	font-style: $heading-font-style;
-	font-weight: $heading-font-weight;
 }
 
 h1,
@@ -78,20 +78,23 @@ dfn[title] {
 }
 
 del {
-	color: #aaa;
-	text-decoration: line-through;
 	vertical-align: baseline;
+	text-decoration: line-through;
+	color: #aaa;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
 	font-size: 16px;
 }
 
 pre {
 	margin: $base-line-height 0;
 	padding: $base-line-height;
-	background-color: #fafafa;
 	color: #2080ad;
+	background-color: #fafafa;
 }
 
 code {
@@ -99,26 +102,25 @@ code {
 }
 
 ins {
-	background: #fff9c0;
 	text-decoration: none;
+	background: #fff9c0;
 }
 
 blockquote {
+	font-style: italic;
 	margin: $base-line-height 40px;
 	padding-left: 20px;
-	border-left: 3px solid $color-1;
 	color: #777;
-	font-style: italic;
-
+	border-left: 3px solid $color-1;
 	cite {
+		position: relative;
+		display: block;
 		padding: 10px 0 0 20px;
 		color: #555;
-		display: block;
-		position: relative;
 		&:before {
-			content: '\2014';
-			left: 0;
 			position: absolute;
+			left: 0;
+			content: "\2014";
 		}
 	}
 }
@@ -127,12 +129,12 @@ q:before,
 q:after,
 blockquote:before,
 blockquote:after {
-  content: "";
+	content: "";
 }
 
 address {
-	margin: 0 0 $base-line-height;
 	display: block;
+	margin: 0 0 $base-line-height;
 }
 
 ul,
@@ -179,15 +181,14 @@ dd {
 }
 
 hr {
-	margin: $base-line-height 0;
-	border-top: 1px solid $border-color;
-	border-bottom: 0;
-	border-right: 0;
-	border-left: 0;
 	clear: both;
 	height: 1px;
 	min-height: 0;
-
+	margin: $base-line-height 0;
+	border-top: 1px solid $border-color;
+	border-right: 0;
+	border-bottom: 0;
+	border-left: 0;
 	&.dotted {
 		border-style: dotted;
 	}
@@ -207,8 +208,8 @@ hr {
  */
 @media print {
 	* {
-		background: transparent !important;
 		color: #000 !important;
+		background: transparent !important;
 		box-shadow: none !important;
 		text-shadow: none !important;
 	}
@@ -235,6 +236,7 @@ hr {
 	pre,
 	blockquote {
 		border: 1px solid #999;
+
 		page-break-inside: avoid;
 	}
 
@@ -252,7 +254,7 @@ hr {
 	}
 
 	@page {
-		margin: 0.5cm;
+		margin: .5cm;
 	}
 
 	p,

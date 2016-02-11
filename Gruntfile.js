@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function( grunt ) {
 
 	// require it at the top and pass in the grunt instance
 	require( 'time-grunt' )( grunt );
@@ -6,9 +6,9 @@ module.exports = function(grunt) {
 	// Load all Grunt tasks
 	require( 'jit-grunt' )( grunt, {
 		makepot: 'grunt-wp-i18n'
-	});
+	} );
 
-	grunt.initConfig({
+	grunt.initConfig( {
 
 		pkg: grunt.file.readJSON( 'package.json' ),
 
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 					destPrefix: 'assets/fonts'
 				},
 				files: {
-					'assets/fonts': ['fontawesome/fonts/*']
+					'assets/fonts': [ 'fontawesome/fonts/*' ]
 				}
 			}
 		},
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
 			},
 			prod: {
 				files: {
-					'assets/js/<%= pkg.name %>.min.js': ['assets/js/plugins.min.js','assets/js/main.js']
+					'assets/js/<%= pkg.name %>.min.js': [ 'assets/js/plugins.min.js', 'assets/js/main.js' ]
 				}
 			}
 		},
@@ -90,7 +90,8 @@ module.exports = function(grunt) {
 		sass: {
 			dev: {
 				options: {
-					outputStyle: 'expanded'
+					outputStyle: 'expanded',
+					sourceMap: true
 				},
 				files: {
 					'style.css': 'scss/style.scss',
@@ -99,7 +100,8 @@ module.exports = function(grunt) {
 			},
 			prod: {
 				options: {
-					outputStyle: 'compressed'
+					outputStyle: 'compressed',
+					sourceMap: false
 				},
 				files: {
 					'style.min.css': 'scss/style.scss'
@@ -112,12 +114,17 @@ module.exports = function(grunt) {
 			options: {
 				browsers: [
 					'last 8 versions', 'ie 8', 'ie 9'
-				]
+				],
+				map: true
 			},
-			main: {
+			dev: {
 				files: {
-					'style.css': 'style.css',
-					'style.min.css': 'style.min.css',
+					'style.css': 'style.css'
+				}
+			},
+			prod: {
+				files: {
+					'style.min.css': 'style.min.css'
 				}
 			}
 		},
@@ -128,23 +135,21 @@ module.exports = function(grunt) {
 				options: {
 					swapLtrRtlInUrl: false
 				},
-				files: [
-					{
-						src: 'style.css',
-						dest: 'rtl.css'
-					}
-				]
+				files: [ {
+					src: 'style.css',
+					dest: 'rtl.css'
+				} ]
 			}
 		},
 
 		// Newer files checker
 		newer: {
 			options: {
-				override: function(detail, include) {
-					if (detail.task === 'php' || detail.task === 'sass') {
-						include(true);
+				override: function( detail, include ) {
+					if ( detail.task === 'php' || detail.task === 'sass' ) {
+						include( true );
 					} else {
-						include(false);
+						include( false );
 					}
 				}
 			}
@@ -157,17 +162,34 @@ module.exports = function(grunt) {
 				spawn: false
 			},
 			scss: {
-				files: ['scss/**/*.scss'],
+				files: [ 'scss/**/*.scss' ],
 				tasks: [
-					'newer:sass:dev',
-					'newer:autoprefixer:main',
+					'sass:dev',
+					'autoprefixer:dev',
 				]
 			},
 			js: {
-				files: ['assets/js/**/*.js'],
+				files: [ 'assets/js/**/*.js' ],
 			},
 			php: {
-				files: ['**/*.php'],
+				files: [ '**/*.php' ],
+			}
+		},
+
+		// Images minify
+		imagemin: {
+			screenshot: {
+				files: {
+					'screenshot.jpg': 'screenshot.jpg'
+				}
+			},
+			dynamic: {
+				files: [ {
+					expand: true,
+					cwd: 'assets/img/',
+					src: [ '**/*.{png,jpg,gif}' ],
+					dest: 'assets/img/'
+				} ]
 			}
 		},
 
@@ -175,7 +197,7 @@ module.exports = function(grunt) {
 		copy: {
 			build: {
 				expand: true,
-				src:  [
+				src: [
 					'**',
 					'!node_modules/**',
 					'!bower_components/**',
@@ -206,7 +228,7 @@ module.exports = function(grunt) {
 				},
 				expand: true,
 				cwd: 'build/<%= pkg.name %>/',
-				src: ['**/*'],
+				src: [ '**/*' ],
 				dest: '<%= pkg.name %>/'
 			}
 		},
@@ -222,58 +244,59 @@ module.exports = function(grunt) {
 		makepot: {
 			target: {
 				options: {
-					domainPath: '/languages/',           // Where to save the POT file.
-					exclude: [                           // Exlude folder.
+					domainPath: '/languages/', // Where to save the POT file.
+					exclude: [ // Exlude folder.
 						'build/.*',
 						'assets/.*',
 						'readme/.*',
 						'scss/.*',
 						'bower_components/.*'
 					],
-					potFilename: '<%= pkg.name %>.pot',  // Name of the POT file.
-					type: 'wp-theme',                    // Type of project (wp-plugin or wp-theme).
-					updateTimestamp: true,               // Whether the POT-Creation-Date should be updated without other changes.
+					potFilename: '<%= pkg.name %>.pot', // Name of the POT file.
+					type: 'wp-theme', // Type of project (wp-plugin or wp-theme).
+					updateTimestamp: true, // Whether the POT-Creation-Date should be updated without other changes.
 					processPot: function( pot, options ) {
-						pot.headers['report-msgid-bugs-to'] = 'http://www.theme-junkie.com/support';
-						pot.headers['plural-forms'] = 'nplurals=2; plural=n != 1;';
-						pot.headers['last-translator'] = 'Support (support@theme-junkie.com)\n';
-						pot.headers['language-team'] = 'Support (support@theme-junkie.com)\n';
-						pot.headers['x-poedit-basepath'] = '..\n';
-						pot.headers['x-poedit-language'] = 'English\n';
-						pot.headers['x-poedit-country'] = 'UNITED STATES\n';
-						pot.headers['x-poedit-sourcecharset'] = 'utf-8\n';
-						pot.headers['x-poedit-searchpath-0'] = '.\n';
-						pot.headers['x-poedit-keywordslist'] = '__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n';
-						pot.headers['x-textdomain-support'] = 'yes\n';
+						pot.headers[ 'report-msgid-bugs-to' ] = 'http://www.theme-junkie.com/support';
+						pot.headers[ 'plural-forms' ] = 'nplurals=2; plural=n != 1;';
+						pot.headers[ 'last-translator' ] = 'Support (support@theme-junkie.com)\n';
+						pot.headers[ 'language-team' ] = 'Support (support@theme-junkie.com)\n';
+						pot.headers[ 'x-poedit-basepath' ] = '..\n';
+						pot.headers[ 'x-poedit-language' ] = 'English\n';
+						pot.headers[ 'x-poedit-country' ] = 'UNITED STATES\n';
+						pot.headers[ 'x-poedit-sourcecharset' ] = 'utf-8\n';
+						pot.headers[ 'x-poedit-searchpath-0' ] = '.\n';
+						pot.headers[ 'x-poedit-keywordslist' ] = '__;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n';
+						pot.headers[ 'x-textdomain-support' ] = 'yes\n';
 						return pot;
 					}
 				}
 			}
 		},
 
-	});
+	} );
 
 	// Dev task
-	grunt.registerTask('default', [
+	grunt.registerTask( 'default', [
 		'bowercopy',
-		'newer:uglify:dev',
-		'newer:cssmin:prod',
-		'newer:sass:dev'
-	]);
+		'uglify:dev',
+		'cssmin:prod',
+		'sass:dev'
+	] );
 
 	// Production task
-	grunt.registerTask('build', [
+	grunt.registerTask( 'build', [
 		'newer:uglify',
-		'sass',
+		'newer:imagemin',
+		'sass:prod',
 		'cssjanus',
-		'autoprefixer:main',
+		'autoprefixer:prod',
 		'makepot',
-		'newer:copy'
-	]);
+		'copy'
+	] );
 
 	// Package task
-	grunt.registerTask('package', [
+	grunt.registerTask( 'package', [
 		'compress'
-	]);
+	] );
 
 };
