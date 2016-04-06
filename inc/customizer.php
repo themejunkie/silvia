@@ -123,6 +123,12 @@ function silvia_customizer_register() {
 			'section'      => $section,
 			'type'         => 'text'
 		);
+		$options[$prefix . 'vk'] = array(
+			'id'           => $prefix . 'vk',
+			'label'        => __( 'VK Profile', 'silvia' ),
+			'section'      => $section,
+			'type'         => 'text'
+		);
 
 		// Footer Text
 		$section = $prefix . 'footer-text-section';
