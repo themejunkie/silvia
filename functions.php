@@ -13,11 +13,16 @@
  */
 
 /**
- * Set the content width based on the theme's design and stylesheet.
+ * Sets the content width in pixels, based on the theme's design and stylesheet.
+ *
+ * Priority 0 to make it available to lower priority callbacks.
+ *
+ * @global int $content_width
  */
-if ( ! isset( $content_width ) ) {
-	$content_width = 869; /* pixels */
+function silvia_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'silvia_content_width', 869 );
 }
+add_action( 'after_setup_theme', 'silvia_content_width', 0 );
 
 if ( ! function_exists( 'silvia_content_width' ) ) :
 /**
@@ -99,6 +104,9 @@ function silvia_theme_setup() {
 
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );
+
+	// Indicate widget sidebars can use selective refresh in the Customizer.
+	add_theme_support( 'customize-selective-refresh-widgets' );
 
 }
 endif; // silvia_theme_setup

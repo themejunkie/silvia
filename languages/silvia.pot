@@ -2,16 +2,16 @@
 # This file is distributed under the GNU General Public License v2.0 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Silvia 1.0.7\n"
+"Project-Id-Version: Silvia 1.0.8\n"
 "Report-Msgid-Bugs-To: http://www.theme-junkie.com/support\n"
-"POT-Creation-Date: 2016-04-04 17:09+0300\n"
+"POT-Creation-Date: 2016-05-01 15:49:52+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Support (support@theme-junkie.com)\n"
 "Language-Team: Support (support@theme-junkie.com)\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Language: English\n"
@@ -89,7 +89,7 @@ msgstr ""
 msgid "Vietnamese"
 msgstr ""
 
-#: admin/functions.php:35 inc/customizer.php:242
+#: admin/functions.php:35 inc/customizer.php:248
 msgid "Site Title"
 msgstr ""
 
@@ -166,27 +166,27 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: functions.php:72
+#: functions.php:77
 msgid "Primary Location"
 msgstr ""
 
-#: functions.php:93
+#: functions.php:98
 msgid "1 Column Wide (Full Width)"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:99
 msgid "2 Columns: Content / Sidebar"
 msgstr ""
 
-#: functions.php:95
+#: functions.php:100
 msgid "2 Columns: Sidebar / Content"
 msgstr ""
 
-#: functions.php:117
+#: functions.php:125
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:119
+#: functions.php:127
 msgid "Main sidebar that appears on the right."
 msgstr ""
 
@@ -635,14 +635,13 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Major update, please regenerate your image sizes. Silvia is a light, bright "
-"and beautiful photography WordPress theme. It’s ideal for website focused "
-"on photography, graphic design, fashion, art, architecture, interior "
-"design, and other creative fields! Key features are responsive, retina "
-"support, fast load and SEO friendly with Schema.org markup. The theme "
-"options are powered by easy-to-use Customizer, allows you to modify various "
-"options including colors, typography, layout, etc. It also smoothly "
-"integrated with Jetpack and Polylang plugin."
+"Silvia is a light, bright and beautiful photography WordPress theme. Itâ€™s "
+"ideal for website focused on photography, graphic design, fashion, art, "
+"architecture, interior design, and other creative fields! Key features are "
+"responsive, retina support, fast load and SEO friendly with Schema.org "
+"markup. The theme options are powered by easy-to-use Customizer, allows you "
+"to modify various options including colors, typography, layout, etc. It "
+"also smoothly integrated with Jetpack and Polylang plugin."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -675,7 +674,7 @@ msgid_plural "%1$s Comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:143
+#: functions.php:151
 #. Translators: If there are characters in your language that are not supported
 #. by Crimson Text, translate this to 'off'. Do not translate into your own
 #. language.
@@ -683,7 +682,7 @@ msgctxt "Crimson Text font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:171
 #. Translators: If there are characters in your language that are not supported
 #. by Oswald, translate this to 'off'. Do not translate into your own language.
 msgctxt "Oswald font: on or off"

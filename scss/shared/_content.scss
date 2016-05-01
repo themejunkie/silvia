@@ -56,11 +56,10 @@
 		width: 100%;
 		transition: all 200ms ease-in-out 0s;
 		transform: translateZ(0);
+		filter: grayscale(100%);
 		@include susy-media(768px) {
 			width: auto;
 		}
-
-		filter: grayscale(100%);
 	}
 }
 

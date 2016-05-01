@@ -2,8 +2,8 @@
 /*!
  * Theme Name: Silvia
  * Theme URI: https://www.theme-junkie.com/themes/silvia/
- * Description: Major update, please regenerate your image sizes. Silvia is a light, bright and beautiful photography WordPress theme. It’s ideal for website focused on photography, graphic design, fashion, art, architecture, interior design, and other creative fields! Key features are responsive, retina support, fast load and SEO friendly with Schema.org markup. The theme options are powered by easy-to-use Customizer, allows you to modify various options including colors, typography, layout, etc. It also smoothly integrated with Jetpack and Polylang plugin.
- * Version: 1.0.7
+ * Description: Silvia is a light, bright and beautiful photography WordPress theme. It’s ideal for website focused on photography, graphic design, fashion, art, architecture, interior design, and other creative fields! Key features are responsive, retina support, fast load and SEO friendly with Schema.org markup. The theme options are powered by easy-to-use Customizer, allows you to modify various options including colors, typography, layout, etc. It also smoothly integrated with Jetpack and Polylang plugin.
+ * Version: 1.0.8
  * Author: Theme Junkie
  * Author URI: https://www.theme-junkie.com/
  * Tags: blue, one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-menu, editor-style, threaded-comments, translation-ready
@@ -46,7 +46,7 @@
 /*------------------------------------*
 	$NORMALIZE
 *------------------------------------*/
-@import "normalize";
+@import "bower_components/normalize.css/normalize";
 
 /*------------------------------------*
 	$LAYOUTS

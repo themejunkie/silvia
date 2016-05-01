@@ -1,4 +1,14 @@
-1.0.7 - Feb 11, 2015
+1.0.8 - May 1, 2016
+* Updated main stylesheets
+  style.css, style.min.css
+* Added VK social profile
+  inc/customizer.php, inc/template-tags.php
+* Updated slicknav, fontawesome and normalize.css
+  assets/
+* Support selective refresh in the Customizer
+  functions.php
+
+1.0.7 - Feb 11, 2016
 * Fixed responsive image size issue
   functions.php, content.php, content-single.php
 * Updated assets

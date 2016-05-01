@@ -111,18 +111,23 @@ module.exports = function( grunt ) {
 
 		// Autoprefixer.
 		autoprefixer: {
-			options: {
-				browsers: [
-					'last 8 versions', 'ie 8', 'ie 9'
-				],
-				map: true
-			},
 			dev: {
+				options: {
+					browsers: [
+						'last 8 versions', 'ie 8', 'ie 9'
+					],
+					map: true
+				},
 				files: {
 					'style.css': 'style.css'
 				}
 			},
 			prod: {
+				options: {
+					browsers: [
+						'last 8 versions', 'ie 8', 'ie 9'
+					]
+				},
 				files: {
 					'style.min.css': 'style.min.css'
 				}
