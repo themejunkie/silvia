@@ -434,6 +434,7 @@ function silvia_social_links() {
 	$linkedin  = silvia_mod( $prefix . 'linkedin' );
 	$dribbble  = silvia_mod( $prefix . 'dribbble' );
 	$instagram = silvia_mod( $prefix . 'instagram' );
+	$vk        = silvia_mod( $prefix . 'vk' );
 
 	// Display the data
 	echo '<div class="social-links">';
@@ -454,6 +455,9 @@ function silvia_social_links() {
 		}
 		if ( $instagram ) {
 			echo '<a href="' . esc_url( $instagram ) . '"><i class="fa fa-instagram"></i></a>';
+		}
+		if ( $vk ) {
+			echo '<a href="' . esc_url( $vk ) . '"><i class="fa fa-vk"></i></a>';
 		}
 	echo '</div>';
 
