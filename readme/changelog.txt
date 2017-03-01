@@ -4,6 +4,13 @@
   style.css, style.min.css
 * Update assets
   assets/
+* Add one-click demo importer
+	functions.php
+	inc/demo/
+* Add plugin suggestion library
+	inc/classes/tgmpa.php
+	inc/plugins.php
+	functions.php
 
 1.0.8 - May 1, 2016
 * Updated main stylesheets

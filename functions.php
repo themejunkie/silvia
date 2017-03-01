@@ -221,3 +221,13 @@ require trailingslashit( get_template_directory() ) . 'inc/hybrid/theme-layouts.
 if ( function_exists( 'pll_the_languages' ) ) {
 	require trailingslashit( get_template_directory() ) . 'inc/polylang.php';
 }
+
+/**
+ * Require and recommended plugins list.
+ */
+require trailingslashit( get_template_directory() ) . 'inc/plugins.php';
+
+/**
+ * Demo importer
+ */
+require trailingslashit( get_template_directory() ) . 'inc/demo/demo-importer.php';
