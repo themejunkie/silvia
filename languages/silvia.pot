@@ -1,17 +1,17 @@
-# Copyright (C) 2016 Theme Junkie
-# This file is distributed under the GNU General Public License v2.0 or later.
+# <!=Copyright (C) 2017 Theme Junkie
+# This file is distributed under the GNU General Public License v2.0 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Silvia 1.0.8\n"
+"Project-Id-Version: Silvia 1.0.9\n"
 "Report-Msgid-Bugs-To: http://www.theme-junkie.com/support\n"
-"POT-Creation-Date: 2016-05-01 15:49:52+00:00\n"
+"POT-Creation-Date: 2017-03-01 03:59:51+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Support (support@theme-junkie.com)\n"
 "Language-Team: Support (support@theme-junkie.com)\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Generator: grunt-wp-i18n1.0.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Language: English\n"

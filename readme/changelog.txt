@@ -1,4 +1,7 @@
 1.0.9 - March 01, 2017
+* Maintenance update
+* Updated main stylesheets
+  style.css, style.min.css
 * Update assets
   assets/
 

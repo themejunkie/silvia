@@ -134,19 +134,6 @@ module.exports = function( grunt ) {
 			}
 		},
 
-		// Auto generate rtl.css
-		cssjanus: {
-			theme: {
-				options: {
-					swapLtrRtlInUrl: false
-				},
-				files: [ {
-					src: 'style.css',
-					dest: 'rtl.css'
-				} ]
-			}
-		},
-
 		// Newer files checker
 		newer: {
 			options: {
@@ -293,7 +280,6 @@ module.exports = function( grunt ) {
 		'newer:uglify',
 		'newer:imagemin',
 		'sass:prod',
-		'cssjanus',
 		'autoprefixer:prod',
 		'makepot',
 		'copy'
