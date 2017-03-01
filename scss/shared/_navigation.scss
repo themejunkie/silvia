@@ -132,7 +132,8 @@
 		}
 	}
 	.slicknav_menutxt {
-		@extend .screen-reader-text;
+		position: absolute;
+		clip: rect(1px, 1px, 1px, 1px);
 	}
 	.slicknav_btn {
 		margin: 0;

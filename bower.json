@@ -20,11 +20,11 @@
   ],
   "dependencies": {
     "html5shiv": "~3.7.3",
-    "fitvids": "~1.1.0",
-    "fontawesome": "~4.6.1",
-    "slicknav": "~1.0.7",
+    "fitvids": "~1.2.0",
+    "fontawesome": "~4.7.0",
+    "slicknav": "~1.0.10",
     "magnific-popup": "maginificantpopup#~1.0.0",
-    "normalize.css": "~4.1.1",
+    "normalize.css": "~5.0.0",
     "susy": "~2.2.12"
   }
 }

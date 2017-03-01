@@ -1,3 +1,7 @@
+1.0.9 - March 01, 2017
+* Update assets
+  assets/
+
 1.0.8 - May 1, 2016
 * Updated main stylesheets
   style.css, style.min.css
