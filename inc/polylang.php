@@ -9,17 +9,14 @@
  * @since      1.0.0
  */
 
-// Theme prefix
-$prefix = 'silvia-';
-
 /**
  * Register callout strings
  */
-$callout = silvia_mod( $prefix . 'home-callout' ); // Get the data set in customizer
-pll_register_string( $prefix . 'home-callout', $callout, 'silvia' );
+$callout = get_theme_mod( 'silvia-home-callout' ); // Get the data set in customizer
+pll_register_string( 'silvia-home-callout', $callout, 'silvia' );
 
 /**
  * Register footer text strings
  */
-$footer_text = silvia_mod( $prefix . 'footer-text' ); // Get the data set in customizer
-pll_register_string( $prefix . 'footer-text', $footer_text, 'silvia' );
+$footer_text = get_theme_mod( 'silvia-footer-text' ); // Get the data set in customizer
+pll_register_string( 'silvia-footer-text', $footer_text, 'silvia' );

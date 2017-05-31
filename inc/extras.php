@@ -38,16 +38,13 @@ add_filter( 'body_class', 'silvia_body_classes' );
  */
 function silvia_post_classes( $classes ) {
 
-	// Theme prefix
-	$prefix = 'silvia-';
-
 	// Adds a class if a post hasn't a thumbnail.
 	if ( ! has_post_thumbnail() ) {
 		$classes[] = 'no-post-thumbnail';
 	}
 
 	// Posts grid layout
-	$layout = silvia_mod( $prefix . 'grid-layout' );
+	$layout = get_theme_mod( 'silvia-grid-layout', '3-col' );
 	if ( ! is_single() && ! is_page() ) {
 		if ( $layout == '2-col' ) {
 			$classes[] = 'post-grid-2-col';

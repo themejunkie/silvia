@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Silvia 1.0.9\n"
 "Report-Msgid-Bugs-To: http://www.theme-junkie.com/support\n"
-"POT-Creation-Date: 2017-03-01 07:47:21+00:00\n"
+"POT-Creation-Date: 2017-05-31 07:21:51+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,86 +31,6 @@ msgstr ""
 msgid ""
 "It looks like nothing was found at this location. Maybe try a search or "
 "browse our latest posts below."
-msgstr ""
-
-#: admin/controls/switch.php:57
-msgid "On"
-msgstr ""
-
-#: admin/controls/switch.php:58
-msgid "Off"
-msgstr ""
-
-#: admin/extensions/fonts.php:18
-msgid "Text Fonts"
-msgstr ""
-
-#: admin/extensions/fonts.php:20
-msgid "Google Fonts"
-msgstr ""
-
-#: admin/extensions/fonts.php:125
-msgid "All"
-msgstr ""
-
-#: admin/extensions/fonts.php:126
-msgid "Cyrillic"
-msgstr ""
-
-#: admin/extensions/fonts.php:127
-msgid "Cyrillic Extended"
-msgstr ""
-
-#: admin/extensions/fonts.php:128
-msgid "Devanagari"
-msgstr ""
-
-#: admin/extensions/fonts.php:129
-msgid "Greek"
-msgstr ""
-
-#: admin/extensions/fonts.php:130
-msgid "Greek Extended"
-msgstr ""
-
-#: admin/extensions/fonts.php:131
-msgid "Khmer"
-msgstr ""
-
-#: admin/extensions/fonts.php:132
-msgid "Latin"
-msgstr ""
-
-#: admin/extensions/fonts.php:133
-msgid "Latin Extended"
-msgstr ""
-
-#: admin/extensions/fonts.php:134
-msgid "Vietnamese"
-msgstr ""
-
-#: admin/functions.php:35 inc/customizer.php:248
-msgid "Site Title"
-msgstr ""
-
-#: admin/functions.php:36
-msgid "Site title will automatically disapear if you upload a logo."
-msgstr ""
-
-#: admin/functions.php:37
-msgid "Background"
-msgstr ""
-
-#: admin/functions.php:62
-msgid "Select a tag &hellip;"
-msgstr ""
-
-#: admin/functions.php:88
-msgid "Select a category &hellip;"
-msgstr ""
-
-#: admin/functions.php:120
-msgid "Documentation"
 msgstr ""
 
 #: comments.php:26 comments.php:43
@@ -153,15 +73,15 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: content-page.php:22 content-single.php:16 image.php:35
+#: content-page.php:19 content-single.php:16 image.php:35
 msgid "Pages:"
 msgstr ""
 
-#: content-page.php:28
+#: content-page.php:25
 msgid "Edit"
 msgstr ""
 
-#: content.php:16 inc/template-tags.php:140
+#: content.php:16 inc/template-tags.php:134
 #. translators: used between list items, there is a space after the comma
 msgid ", "
 msgstr ""
@@ -170,23 +90,23 @@ msgstr ""
 msgid "Primary Location"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:106
 msgid "1 Column Wide (Full Width)"
 msgstr ""
 
-#: functions.php:99
+#: functions.php:107
 msgid "2 Columns: Content / Sidebar"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:108
 msgid "2 Columns: Sidebar / Content"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:133
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:127
+#: functions.php:135
 msgid "Main sidebar that appears on the right."
 msgstr ""
 
@@ -533,330 +453,267 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/customizer.php:41
-msgid "General"
+#: inc/customizer/colors.php:17
+msgid "SEARCH"
 msgstr ""
 
-#: inc/customizer.php:50
-msgid "RSS"
+#: inc/customizer/colors.php:28 inc/customizer/colors.php:314
+msgid "Icon"
 msgstr ""
 
-#: inc/customizer.php:53
-msgid "If you fill the custom rss url below, it will replace the default."
+#: inc/customizer/colors.php:39 inc/customizer/colors.php:248
+#: inc/customizer/colors.php:292 inc/customizer.php:66
+msgid "Background"
 msgstr ""
 
-#: inc/customizer.php:57
-msgid "Custom RSS URL (eg. Feedburner)"
+#: inc/customizer/colors.php:50
+msgid "HEADER"
 msgstr ""
 
-#: inc/customizer.php:68
-msgid "Callout"
+#: inc/customizer/colors.php:61
+msgid "Site title"
 msgstr ""
 
-#: inc/customizer.php:69
-msgid "The text will appear on home page below the Site Title and Site Description."
+#: inc/customizer/colors.php:72
+msgid "Site description"
 msgstr ""
 
-#: inc/customizer.php:75
-msgid "Callout text"
+#: inc/customizer/colors.php:83
+msgid "MENU"
 msgstr ""
 
-#: inc/customizer.php:85
-msgid "Social"
+#: inc/customizer/colors.php:94 inc/customizer/colors.php:160
+#: inc/customizer/colors.php:215
+msgid "Link"
 msgstr ""
 
-#: inc/customizer.php:86
-msgid "Please add full profile link, for example https://twitter.com/theme_junkie/"
+#: inc/customizer/colors.php:105
+msgid "Hover & current"
 msgstr ""
 
-#: inc/customizer.php:92
-msgid "Twitter Profile"
+#: inc/customizer/colors.php:116
+msgid "Hover & current menu border"
 msgstr ""
 
-#: inc/customizer.php:98
-msgid "Facebook Profile"
+#: inc/customizer/colors.php:127
+msgid "POST"
 msgstr ""
 
-#: inc/customizer.php:104
-msgid "Google Plus Profile"
+#: inc/customizer/colors.php:138 inc/customizer/colors.php:193
+msgid "Text"
 msgstr ""
 
-#: inc/customizer.php:110
-msgid "Linkedin Profile"
+#: inc/customizer/colors.php:149 inc/customizer/colors.php:204
+msgid "Heading"
 msgstr ""
 
-#: inc/customizer.php:116
-msgid "Dribbble Profile"
+#: inc/customizer/colors.php:171 inc/customizer/colors.php:226
+msgid "Link hover"
 msgstr ""
 
-#: inc/customizer.php:122
-msgid "Instagram Profile"
+#: inc/customizer/colors.php:182
+msgid "PAGE"
 msgstr ""
 
-#: inc/customizer.php:128
-msgid "VK Profile"
+#: inc/customizer/colors.php:237
+msgid "FOOTER"
 msgstr ""
 
-#: inc/customizer.php:138
-msgid "Footer Text"
-msgstr ""
-
-#: inc/customizer.php:145
-msgid "Customize the footer text."
-msgstr ""
-
-#: inc/customizer.php:156 inc/customizer.php:242
-msgid "Header"
-msgstr ""
-
-#: inc/customizer.php:165
-msgid "Logo"
-msgstr ""
-
-#: inc/customizer.php:171
-msgid "Regular Logo"
-msgstr ""
-
-#: inc/customizer.php:178
-msgid "Retina Logo"
-msgstr ""
-
-#: inc/customizer.php:179
-msgid "The Retina Logo should be twice the size of the Regular Logo."
-msgstr ""
-
-#: inc/customizer.php:190 inc/customizer.php:216
-msgid "Search"
-msgstr ""
-
-#: inc/customizer.php:196
-msgid "Display search icon"
-msgstr ""
-
-#: inc/customizer.php:207
-msgid "Color"
-msgstr ""
-
-#: inc/customizer.php:222 inc/customizer.php:522
-msgid "Icon color"
-msgstr ""
-
-#: inc/customizer.php:230 inc/customizer.php:477 inc/customizer.php:507
-msgid "Background color"
-msgstr ""
-
-#: inc/customizer.php:256
-msgid "Site Description"
-msgstr ""
-
-#: inc/customizer.php:268
-msgid "Menu"
-msgstr ""
-
-#: inc/customizer.php:274 inc/customizer.php:410 inc/customizer.php:452
-#: inc/customizer.php:493
-msgid "Link color"
-msgstr ""
-
-#: inc/customizer.php:282
-msgid "Hover & Current Menu"
-msgstr ""
-
-#: inc/customizer.php:288
-msgid "Hover & current menu color"
-msgstr ""
-
-#: inc/customizer.php:295
-msgid "Hover & current menu border color"
-msgstr ""
-
-#: inc/customizer.php:306
-msgid "Page Header"
-msgstr ""
-
-#: inc/customizer.php:307
-msgid ""
-"This colors are used for: Callout, taxonomy title and excerpt, post excerpt "
-"and search result text."
-msgstr ""
-
-#: inc/customizer.php:313 inc/customizer.php:353
-msgid "Title color"
-msgstr ""
-
-#: inc/customizer.php:321
-msgid "Excerpt color"
-msgstr ""
-
-#: inc/customizer.php:333 inc/customizer.php:588
-msgid "Posts Grid"
-msgstr ""
-
-#: inc/customizer.php:334
-msgid "Posts grid is a list of posts displayed on home, archive and search page."
-msgstr ""
-
-#: inc/customizer.php:340
-msgid "Image grayscale"
-msgstr ""
-
-#: inc/customizer.php:341
-msgid ""
-"Grayscale is the 'gray' effect for the image. Please select the input and "
-"scroll up or down to choose the number."
-msgstr ""
-
-#: inc/customizer.php:361
-msgid "Title hover color"
-msgstr ""
-
-#: inc/customizer.php:368
-msgid "Category color"
-msgstr ""
-
-#: inc/customizer.php:376
-msgid "Category hover color"
-msgstr ""
-
-#: inc/customizer.php:387 inc/customizer.php:612
-msgid "Posts"
-msgstr ""
-
-#: inc/customizer.php:388
-msgid "Used for single post only, please navigate the preview to the existing post."
-msgstr ""
-
-#: inc/customizer.php:394 inc/customizer.php:436 inc/customizer.php:485
+#: inc/customizer/colors.php:259
 msgid "Text color"
 msgstr ""
 
-#: inc/customizer.php:402 inc/customizer.php:444
-msgid "Heading color"
+#: inc/customizer/colors.php:270
+msgid "Link color"
 msgstr ""
 
-#: inc/customizer.php:418 inc/customizer.php:460
-msgid "Link hover color"
+#: inc/customizer/colors.php:281
+msgid "SOCIAL"
 msgstr ""
 
-#: inc/customizer.php:429 inc/customizer.php:694
-msgid "Page"
+#: inc/customizer/colors.php:303
+msgid "Background hover"
 msgstr ""
 
-#: inc/customizer.php:430
-msgid "Used for page only, please navigate the preview to the existing page."
+#: inc/customizer/layouts.php:13
+msgid "Layouts"
 msgstr ""
 
-#: inc/customizer.php:471
-msgid "Footer"
+#: inc/customizer/layouts.php:24
+msgid "Posts Grid"
 msgstr ""
 
-#: inc/customizer.php:501
-msgid "Social color"
-msgstr ""
-
-#: inc/customizer.php:515
-msgid "Background hover color"
-msgstr ""
-
-#: inc/customizer.php:534
-msgid "Background Image"
-msgstr ""
-
-#: inc/customizer.php:543
-msgid "Typography"
-msgstr ""
-
-#: inc/customizer.php:553
-msgid "Global"
-msgstr ""
-
-#: inc/customizer.php:559
-msgid "Text font"
-msgstr ""
-
-#: inc/customizer.php:567
-msgid "Heading font"
-msgstr ""
-
-#: inc/customizer.php:579
-msgid "Content Layout"
-msgstr ""
-
-#: inc/customizer.php:595 inc/hybrid/theme-layouts.php:437
-#: inc/hybrid/theme-layouts.php:547 inc/hybrid/theme-layouts.php:632
-msgid "Layout"
-msgstr ""
-
-#: inc/customizer.php:596
-msgid "Please select the posts grid column"
-msgstr ""
-
-#: inc/customizer.php:601
+#: inc/customizer/layouts.php:29
 msgid "2 columns"
 msgstr ""
 
-#: inc/customizer.php:602
+#: inc/customizer/layouts.php:30
 msgid "3 columns"
 msgstr ""
 
-#: inc/customizer.php:603
+#: inc/customizer/layouts.php:31
 msgid "4 columns"
 msgstr ""
 
-#: inc/customizer.php:613
-msgid "Posts is a single post page."
+#: inc/customizer/misc.php:13
+msgid "Misc"
 msgstr ""
 
-#: inc/customizer.php:619
-msgid "Post Meta"
+#: inc/customizer/misc.php:14
+msgid "These options is used for customizing general elements."
 msgstr ""
 
-#: inc/customizer.php:625
+#: inc/customizer/misc.php:25
+msgid "Custom RSS"
+msgstr ""
+
+#: inc/customizer/misc.php:26
+msgid "Custom RSS URL such as Feedburner."
+msgstr ""
+
+#: inc/customizer/misc.php:38
+msgid "Callout"
+msgstr ""
+
+#: inc/customizer/misc.php:39
+msgid "The text that appear on home page below the site title and site description."
+msgstr ""
+
+#: inc/customizer/misc.php:51
+msgid "Show search icon"
+msgstr ""
+
+#: inc/customizer/misc.php:63
+msgid "Show page title"
+msgstr ""
+
+#: inc/customizer/misc.php:75
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer/posts.php:13
+msgid "Posts"
+msgstr ""
+
+#: inc/customizer/posts.php:14
+msgid ""
+"Posts is a single post page. Please navigate the preview to the single post "
+"to see changes."
+msgstr ""
+
+#: inc/customizer/posts.php:25
+msgid "POST META"
+msgstr ""
+
+#: inc/customizer/posts.php:36
 msgid "Show post date"
 msgstr ""
 
-#: inc/customizer.php:632
+#: inc/customizer/posts.php:48
 msgid "Show post author name"
 msgstr ""
 
-#: inc/customizer.php:639
+#: inc/customizer/posts.php:60
 msgid "Show post categories"
 msgstr ""
 
-#: inc/customizer.php:646
+#: inc/customizer/posts.php:72
 msgid "Show post tags"
 msgstr ""
 
-#: inc/customizer.php:653
-msgid "Post Date"
+#: inc/customizer/posts.php:84
+msgid "POST DATE"
 msgstr ""
 
-#: inc/customizer.php:659
+#: inc/customizer/posts.php:95
 msgid "Style"
 msgstr ""
 
-#: inc/customizer.php:664
+#: inc/customizer/posts.php:100
 msgid "Absolute (June 16, 2015)"
 msgstr ""
 
-#: inc/customizer.php:665
+#: inc/customizer/posts.php:101
 msgid "Relative (1 week ago)"
 msgstr ""
 
-#: inc/customizer.php:670
-msgid "Related Posts"
+#: inc/customizer/posts.php:111
+msgid "RELATED POSTS"
 msgstr ""
 
-#: inc/customizer.php:676
+#: inc/customizer/posts.php:122
 msgid "Show related posts"
 msgstr ""
 
-#: inc/customizer.php:683
+#: inc/customizer/posts.php:134
 msgid "Show related posts thumbnail"
 msgstr ""
 
-#: inc/customizer.php:700
-msgid "Show page title"
+#: inc/customizer/social.php:13
+msgid "Social"
+msgstr ""
+
+#: inc/customizer/social.php:14
+msgid ""
+"The social button will appear at the bottom of your site. Please add full "
+"profile link, for example https://twitter.com/theme_junkie/"
+msgstr ""
+
+#: inc/customizer/social.php:25
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer/social.php:37
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer/social.php:49
+msgid "Google Plus"
+msgstr ""
+
+#: inc/customizer/social.php:61
+msgid "Linkedin"
+msgstr ""
+
+#: inc/customizer/social.php:73
+msgid "Dribbble"
+msgstr ""
+
+#: inc/customizer/social.php:85
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer/social.php:97
+msgid "VK"
+msgstr ""
+
+#: inc/customizer.php:23
+msgid "Design"
+msgstr ""
+
+#: inc/customizer.php:24
+msgid "This panel is used for customizing the design of your site."
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "This panel is used for customizing the Silvia theme."
+msgstr ""
+
+#: inc/customizer.php:211
+msgid "Documentation"
+msgstr ""
+
+#: inc/customizer.php:271
+msgid "Select a tag &hellip;"
+msgstr ""
+
+#: inc/hybrid/theme-layouts.php:437 inc/hybrid/theme-layouts.php:547
+#: inc/hybrid/theme-layouts.php:632
+msgid "Layout"
 msgstr ""
 
 #: inc/hybrid/theme-layouts.php:463
@@ -867,84 +724,84 @@ msgstr ""
 msgid "Global Layout"
 msgstr ""
 
-#: inc/template-tags.php:123
+#: inc/template-tags.php:117
 msgid "%s ago"
 msgstr ""
 
-#: inc/template-tags.php:128
+#: inc/template-tags.php:122
 msgid "Published: %s"
 msgstr ""
 
-#: inc/template-tags.php:133
+#: inc/template-tags.php:127
 msgid "Author: %s"
 msgstr ""
 
-#: inc/template-tags.php:144
+#: inc/template-tags.php:138
 msgid "Category: %s"
 msgstr ""
 
-#: inc/template-tags.php:151
+#: inc/template-tags.php:145
 msgid "Tags: %s"
 msgstr ""
 
-#: inc/template-tags.php:167
+#: inc/template-tags.php:161
 msgid "Size: %s"
 msgstr ""
 
-#: inc/template-tags.php:172
+#: inc/template-tags.php:166
 msgid "Camera: %s"
 msgstr ""
 
-#: inc/template-tags.php:178
+#: inc/template-tags.php:172
 msgid "Aperture: %s"
 msgstr ""
 
-#: inc/template-tags.php:184
+#: inc/template-tags.php:178
 msgid "Focal Length: %s"
 msgstr ""
 
-#: inc/template-tags.php:190
+#: inc/template-tags.php:184
 msgid "ISO: %s"
 msgstr ""
 
-#: inc/template-tags.php:196
+#: inc/template-tags.php:190
 msgid "Shutter Speed: %s"
 msgstr ""
 
-#: inc/template-tags.php:306
+#: inc/template-tags.php:297
 msgid "You might also like &hellip;"
 msgstr ""
 
-#: inc/template-tags.php:344
+#: inc/template-tags.php:335
 msgid "Pingback:"
 msgstr ""
 
-#: inc/template-tags.php:344
+#: inc/template-tags.php:335
 msgid "(Edit)"
 msgstr ""
 
-#: inc/template-tags.php:370
+#: inc/template-tags.php:361
 #. translators: 1: date, 2: time
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/template-tags.php:371
+#: inc/template-tags.php:362
 msgid "%1$s&middot; Edit%2$s"
 msgstr ""
 
-#: inc/template-tags.php:371
+#: inc/template-tags.php:362
 msgid "Edit Comment"
 msgstr ""
 
-#: inc/template-tags.php:378
+#: inc/template-tags.php:369
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/template-tags.php:382
+#: inc/template-tags.php:373
 msgid "<i class=\"fa fa-reply\"></i> Reply"
 msgstr ""
 
-#: inc/template-tags.php:411
+#: inc/template-tags.php:402
 msgid "Author"
 msgstr ""
 
@@ -995,21 +852,6 @@ msgstr ""
 msgid "https://www.theme-junkie.com/"
 msgstr ""
 
-#: admin/extensions/fonts.php:194
-msgctxt "font style"
-msgid "Serif"
-msgstr ""
-
-#: admin/extensions/fonts.php:198
-msgctxt "font style"
-msgid "Sans Serif"
-msgstr ""
-
-#: admin/extensions/fonts.php:202
-msgctxt "font style"
-msgid "Monospaced"
-msgstr ""
-
 #: comments.php:19
 msgctxt "comments title"
 msgid "One Comment"
@@ -1017,7 +859,7 @@ msgid_plural "%1$s Comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: functions.php:151
+#: functions.php:159
 #. Translators: If there are characters in your language that are not supported
 #. by Crimson Text, translate this to 'off'. Do not translate into your own
 #. language.
@@ -1025,7 +867,7 @@ msgctxt "Crimson Text font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:171
+#: functions.php:179
 #. Translators: If there are characters in your language that are not supported
 #. by Oswald, translate this to 'off'. Do not translate into your own language.
 msgctxt "Oswald font: on or off"

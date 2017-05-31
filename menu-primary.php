@@ -20,8 +20,7 @@ if ( ! has_nav_menu( 'primary' ) ) {
 		); ?>
 
 		<?php
-		$prefix = 'silvia-';
-		$show   = silvia_mod( $prefix . 'search-icon' );
+		$show = get_theme_mod( 'silvia-search-icon', 1 );
 		if ( $show ) :
 		?>
 			<span class="search-toggle">

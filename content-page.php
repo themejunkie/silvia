@@ -1,9 +1,6 @@
 <?php
-// Theme prefix
-$prefix = 'silvia-';
-
 // Get the customizer value.
-$title = silvia_mod( $prefix . 'page-title' );
+$title = get_theme_mod( 'silvia-page-title', 1 );
 ?>
 
 

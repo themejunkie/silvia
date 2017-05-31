@@ -21,6 +21,10 @@ function silvia_enqueue() {
 	// Load plugins stylesheet
 	wp_enqueue_style( 'silvia-plugins-style', trailingslashit( get_template_directory_uri() ) . 'assets/css/plugins.min.css' );
 
+	// Fonts
+	wp_enqueue_style( 'bulan-crimson', silvia_crimnson_text_font() );
+	wp_enqueue_style( 'bulan-oswald', silvia_oswald_font() );
+
 	// if is not a child theme and WP_DEBUG and/or SCRIPT_DEBUG turned on, load the unminified styles & script.
 	if ( ! is_child_theme() && WP_DEBUG || SCRIPT_DEBUG ) {
 

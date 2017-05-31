@@ -22,14 +22,14 @@ if ( ! function_exists( 'silvia_site_branding' ) ) :
 function silvia_site_branding() {
 
 	// Get the customizer value.
-	$prefix = 'silvia-';
-	$logo   = silvia_mod( $prefix . 'logo' );
+	$logo_id  = get_theme_mod( 'custom_logo' );
+	$logo_url = wp_get_attachment_image_src( $logo_id , 'full' );
 
 	// Check if logo available, then display it.
-	if ( $logo ) :
+	if ( $logo_id ) :
 		echo '<div id="logo" itemscope itemtype="http://schema.org/Brand">' . "\n";
 			echo '<a href="' . esc_url( get_home_url() ) . '" itemprop="url" rel="home">' . "\n";
-				echo '<img itemprop="logo" src="' . esc_url( $logo ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" />' . "\n";
+				echo '<img itemprop="logo" src="' . esc_url( $logo_url[0] ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" />' . "\n";
 			echo '</a>' . "\n";
 		echo '</div>' . "\n";
 
@@ -52,11 +52,8 @@ if ( ! function_exists( 'silvia_callout' ) ) :
  */
 function silvia_callout() {
 
-	// Theme prefix
-	$prefix = 'silvia-';
-
 	// Get the data set in customizer
-	$text = silvia_mod( $prefix . 'home-callout' );
+	$text = get_theme_mod( 'silvia-home-callout' );
 
 	// If polylang plugin active, display the translation strings
 	$callout = '';
@@ -105,15 +102,12 @@ if ( ! function_exists( 'silvia_posted_on' ) ) :
  */
 function silvia_posted_on() {
 
-	// Theme prefix
-	$prefix = 'silvia-';
-
 	// Get the data set in customizer
-	$date       = silvia_mod( $prefix . 'post-date' );
-	$author     = silvia_mod( $prefix . 'post-author' );
-	$cat        = silvia_mod( $prefix . 'post-cat' );
-	$tag        = silvia_mod( $prefix . 'post-tag' );
-	$date_style = silvia_mod( $prefix . 'post-date-style' );
+	$date       = get_theme_mod( 'silvia-post-date', 1 );
+	$author     = get_theme_mod( 'silvia-post-author', 1 );
+	$cat        = get_theme_mod( 'silvia-post-cat', 1 );
+	$tag        = get_theme_mod( 'silvia-post-tag', 1 );
+	$date_style = get_theme_mod( 'silvia-post-date-style', 'absolute' );
 
 	// Set up empty variable
 	$style = '';
@@ -259,12 +253,9 @@ if ( ! function_exists( 'silvia_related_posts' ) ) :
 function silvia_related_posts() {
 	global $post;
 
-	// Theme prefix
-	$prefix = 'silvia-';
-
 	// Get the data set in customizer
-	$enable  = silvia_mod( $prefix . 'related-posts' );
-	$img     = silvia_mod( $prefix . 'related-posts-img' );
+	$enable  = get_theme_mod( 'silvia-related-posts', 1 );
+	$img     = get_theme_mod( 'silvia-related-posts-img', 1 );
 
 	// Disable if user choose it.
 	if ( $enable == 0 ) {
@@ -424,17 +415,14 @@ if ( ! function_exists( 'silvia_social_links' ) ) :
  */
 function silvia_social_links() {
 
-	// Theme prefix
-	$prefix = 'silvia-';
-
 	// Get the data set in customizer
-	$twitter   = silvia_mod( $prefix . 'twitter' );
-	$facebook  = silvia_mod( $prefix . 'facebook' );
-	$gplus     = silvia_mod( $prefix . 'gplus' );
-	$linkedin  = silvia_mod( $prefix . 'linkedin' );
-	$dribbble  = silvia_mod( $prefix . 'dribbble' );
-	$instagram = silvia_mod( $prefix . 'instagram' );
-	$vk        = silvia_mod( $prefix . 'vk' );
+	$twitter   = get_theme_mod( 'silvia-twitter' );
+	$facebook  = get_theme_mod( 'silvia-facebook' );
+	$gplus     = get_theme_mod( 'silvia-gplus' );
+	$linkedin  = get_theme_mod( 'silvia-linkedin' );
+	$dribbble  = get_theme_mod( 'silvia-dribbble' );
+	$instagram = get_theme_mod( 'silvia-instagram' );
+	$vk        = get_theme_mod( 'silvia-vk' );
 
 	// Display the data
 	echo '<div class="social-links">';
@@ -470,11 +458,9 @@ if ( ! function_exists( 'silvia_footer_text' ) ) :
  */
 function silvia_footer_text() {
 
-	// Theme prefix
-	$prefix = 'silvia-';
-
 	// Get the customizer data
-	$footer_text = silvia_mod( $prefix . 'footer-text' );
+	$default = '&copy; Copyright ' . date( 'Y' ) . ' <a href="' . esc_url( home_url() ) . '">' . esc_attr( get_bloginfo( 'name' ) ) . '</a> &middot; Designed by <a href="http://www.theme-junkie.com/">Theme Junkie</a>';
+	$footer_text = get_theme_mod( 'silvia-footer-text', $default );
 
 	// If polylang plugin active, display the translation strings
 	$text = '';
@@ -485,7 +471,7 @@ function silvia_footer_text() {
 	}
 
 	// Display the data
-	echo '<p class="copyright">' . stripslashes( $text ) . '</p>';
+	echo '<p class="copyright">' . wp_kses_post( $text ) . '</p>';
 
 }
 endif;
