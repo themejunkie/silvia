@@ -19,6 +19,13 @@ function silvia_register_plugins() {
 			'required' => false,
 		),
 
+		array(
+			'name'     => 'Contact Form Builder for WordPress – Conversion Tools by HubSpot',
+			'slug'     => 'leadin',
+			'source'   => 'https://theme-junkie.com/downloads/hubspot-contact-form-builder.zip',
+			'required' => false,
+		),
+
 	);
 
 	$config = array(
