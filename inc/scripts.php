@@ -22,8 +22,8 @@ function silvia_enqueue() {
 	wp_enqueue_style( 'silvia-plugins-style', trailingslashit( get_template_directory_uri() ) . 'assets/css/plugins.min.css' );
 
 	// Fonts
-	wp_enqueue_style( 'bulan-crimson', silvia_crimnson_text_font() );
-	wp_enqueue_style( 'bulan-oswald', silvia_oswald_font() );
+	wp_enqueue_style( 'silvia-crimson', silvia_crimnson_text_font() );
+	wp_enqueue_style( 'silvia-oswald', silvia_oswald_font() );
 
 	// if is not a child theme and WP_DEBUG and/or SCRIPT_DEBUG turned on, load the unminified styles & script.
 	if ( ! is_child_theme() && WP_DEBUG || SCRIPT_DEBUG ) {
@@ -59,20 +59,6 @@ function silvia_enqueue() {
 
 }
 add_action( 'wp_enqueue_scripts', 'silvia_enqueue' );
-
-/**
- * Loads HTML5 Shiv file.
- *
- * @since  1.0.0
- */
-function silvia_html5_shiv() {
-?>
-<!--[if lte IE 9]>
-<script src="<?php echo trailingslashit( get_template_directory_uri() ) . 'assets/js/html5shiv.min.js'; ?>"></script>
-<![endif]-->
-<?php
-}
-add_action( 'wp_head', 'silvia_html5_shiv', 15 );
 
 /**
  * Enable popup gallery if Jetpack Carousel module

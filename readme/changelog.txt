@@ -1,3 +1,8 @@
+1.1.1 - Apr 28, 2020
+* Fixed minor issues
+* Removed demo importer
+* Removed HTML5shiv script
+
 1.1.0 - May 31, 2017
 * Support WordPress custom logo feature
 * Customizer code refactor

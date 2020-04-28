@@ -14,15 +14,8 @@ function silvia_register_plugins() {
 	$plugins = array(
 
 		array(
-			'name'     => 'One Click Demo Import',
-			'slug'     => 'one-click-demo-import',
-			'required' => false,
-		),
-
-		array(
-			'name'     => 'Contact Form Builder for WordPress – Conversion Tools by HubSpot',
-			'slug'     => 'leadin',
-			'source'   => 'https://theme-junkie.com/downloads/hubspot-contact-form-builder.zip',
+			'name'     => 'MailOptin',
+			'slug'     => 'mailoptin',
 			'required' => false,
 		),
 

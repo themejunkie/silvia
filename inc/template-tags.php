@@ -324,7 +324,7 @@ if ( ! function_exists( 'silvia_comment' ) ) :
  * @since  1.0.0
  */
 function silvia_comment( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment;
+	// $GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
 		case 'pingback' :
 		case 'trackback' :
