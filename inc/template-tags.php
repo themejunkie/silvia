@@ -491,7 +491,7 @@ function silvia_posts_query_404() {
 	);
 
 	// Allow dev to filter the arguments
-	$posts = apply_filters( 'silvia_posts_query_404_args', $args );
+	$args = apply_filters( 'silvia_posts_query_404_args', $args );
 
 	// Our hero!
 	$posts = new WP_Query( $args );
